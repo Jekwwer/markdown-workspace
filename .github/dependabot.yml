@@ -1,0 +1,42 @@
+# .github/dependabot.yml: Automates dependency updates.
+
+version: 2
+updates:
+  # Docker dependencies for the devcontainer
+  - package-ecosystem: "docker"
+    directory: "/.devcontainer"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "Jekwwer"
+    assignees:
+      - "Jekwwer"
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 5
+
+  # GitHub Actions dependencies
+  - package-ecosystem: "github-actions"
+    directory: ".github"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "Jekwwer"
+    assignees:
+      - "Jekwwer"
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 5
+
+  # npm dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "Jekwwer"
+    assignees:
+      - "Jekwwer"
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 5
