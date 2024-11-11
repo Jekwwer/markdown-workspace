@@ -10,8 +10,7 @@
     "generate:toc": "find . -name '*.md' -not -path './node_modules/*' -exec markdown-toc -i {} \\;",
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules'",
     "preview:docs:init": "docsify init docs",
-    "preview:docs": "docsify serve docs",
-    "prepare": "husky install"
+    "preview:docs": "docsify serve docs"
   },
   "devDependencies": {
     "cspell": "^8.16.0",
