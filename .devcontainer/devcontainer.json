@@ -1,0 +1,62 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "catppuccin.catppuccin-vsc",
+        "catppuccin.catppuccin-vsc-icons",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "github.copilot",
+        "github.copilot-chat",
+        "github.vscode-github-actions",
+        "github.vscode-pull-request-github",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers",
+        "redhat.vscode-yaml",
+        "shd101wyy.markdown-preview-enhanced",
+        "yzhang.markdown-all-in-one"
+      ],
+      "settings": {
+        "[dockerfile]": {
+          "editor.rulers": [120]
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[markdown]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.rulers": [120]
+        },
+        "markdownlint.config": {
+          "MD013": {
+            "line_length": 120,
+            "code_block_line_length": 120
+          }
+        },
+        "[yaml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "editor.bracketPairColorization.enabled": true,
+        "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+        "editor.fontSize": 14,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.rulers": [88],
+        "files.autoSave": "afterDelay",
+        "files.autoSaveWhenNoErrors": true,
+        "npm.packageManager": "yarn",
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "workbench.activityBar.location": "top",
+        "workbench.colorTheme": "Catppuccin Macchiato",
+        "workbench.iconTheme": "catppuccin-macchiato",
+        "yaml.format.enable": true
+      }
+    }
+  },
+  "name": "Markdown Template",
+  "postCreateCommand": "yarn prepare && yarn preview:docs:init"
+}

@@ -1,0 +1,5 @@
+# .devcontainer/.dockerignore:
+# Ignores files and directories that should not be copied into the container.
+
+*
+!package*.json

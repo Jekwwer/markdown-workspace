@@ -1,0 +1,53 @@
+{
+  "name": "markdown-template",
+  "version": "1.0.0",
+  "description": "Template for working with Markdown files",
+  "scripts": {
+    "check:links": "find . -name '*.md' -not -path './node_modules/*' | xargs markdown-link-check",
+    "check:spell": "cspell '**/*.md' --gitignore --cache",
+    "check:frontmatter": "remark . --ext .md",
+    "format": "prettier --write .",
+    "generate:toc": "find . -name '*.md' -not -path './node_modules/*' -exec markdown-toc -i {} \\;",
+    "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules'",
+    "preview:docs:init": "docsify init docs",
+    "preview:docs": "docsify serve docs",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "cspell": "^8.16.0",
+    "docsify-cli": "^4.4.4",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "markdown-link-check": "^3.13.6",
+    "markdown-toc": "^1.2.0",
+    "markdownlint-cli2": "^0.15.0",
+    "prettier": "^3.3.3",
+    "remark": "^15.0.1",
+    "remark-cli": "^12.0.1",
+    "remark-frontmatter": "^5.0.0"
+  },
+  "lint-staged": {
+    "*.md": [
+      "yarn check:frontmatter",
+      "yarn check:links",
+      "yarn check:spell",
+      "yarn format",
+      "yarn lint:md"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jekwwer/markdown-template"
+  },
+  "keywords": [
+    "github",
+    "markdown",
+    "docker",
+    "devcontainer",
+    "vscode",
+    "template",
+    "development-environment",
+    "project-template"
+  ],
+  "license": "MIT"
+}
