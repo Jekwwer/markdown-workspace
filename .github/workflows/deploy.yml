@@ -1,0 +1,51 @@
+# .github/workflows/deploy.yml:
+# Deploys Markdown documentation to GitHub Pages using Docsify
+---
+name: Deploy Docsify to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
+      # Install Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: "22"
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          yarn install
+
+      # Initialize Docsify Site
+      - name: Build Docsify Site
+        run: |
+          yarn preview:docs:init
+
+      # Update Docsify Config in index.html
+      - name: Update Docsify Config in index.html
+        run: |
+          REPO_URL="https://github.com/${{ github.repository }}"
+          PROJECT_NAME="${{ github.event.repository.name }}"
+          # Update the name and repo fields in index.html
+          sed -i "s|name: 'Your Project Name'|name: '${PROJECT_NAME}'|" ./docs/index.html
+          sed -i "s|repo: 'https://github.com/your-username/your-repo'|repo: '${REPO_URL}'|" ./docs/index.html
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
