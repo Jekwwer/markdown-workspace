@@ -25,6 +25,10 @@
     "remark-cli": "^12.0.1",
     "remark-frontmatter": "^5.0.0"
   },
+  "resolutions": {
+    "got": "^11.8.5",
+    "marked": "^4.0.10"
+  },
   "lint-staged": {
     "*.md": [
       "yarn check:frontmatter",
