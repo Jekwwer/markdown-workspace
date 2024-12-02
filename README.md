@@ -36,7 +36,7 @@ Ideal for documentation projects, blogs, or any Markdown-heavy projects.
 - **Table of Contents**: Automatically generates and updates TOCs for large files.
 - **Metadata Validation**: Ensures required front matter fields are present.
 - **Live Preview**: Local preview of documentation as a website using `docsify`.
-- **Pre-commit Hooks**: Automates checks for quality assurance before each commit.
+- **Pre-commit Hooks**: Automates checks for quality assurance before each commit using `husky`.
 
 ## Getting Started
 
@@ -62,7 +62,7 @@ Ideal for documentation projects, blogs, or any Markdown-heavy projects.
 3. **Install Dependencies**:
 
    ```bash
-   yarn install
+   yarn
    ```
 
 ## Scripts and Usage
@@ -145,8 +145,7 @@ including formatting, linting, spell checking, link checking, and metadata valid
 ## Configuration Files
 
 - **`.markdownlint.json`**: Configure Markdown linting rules.
-- **`.cspell.json`**: Customize spell checking dictionary.
-- **`.markdown-metadata-check.json`**: Define required fields for front matter.
+- **`cspell.json`**: Customize spell checking dictionary.
 - **`package.json`**: Manage dependencies and scripts.
 
 ## Contributing
