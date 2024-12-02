@@ -1,22 +1,16 @@
 {
-  "version": "0.2",
-  "language": "en",
-  "words": [
-    "azuretools",
-    "catppuccin",
-    "devcontainer",
-    "devcontainers",
-    "dockerfiles",
-    "docsify",
-    "Evgenii",
-    "esbenp",
-    "frontmatter",
-    "hadolint",
-    "Jekwwer",
-    "macchiato",
-    "Shiliaev",
-    "tocstop",
-    "yzhang"
+  "ignorePaths": [
+    "*.json",
+    "*.yaml",
+    "*.yml",
+    ".*"
   ],
-  "ignorePaths": ["node_modules", ".git", "yarn.lock"]
+  "language": "en",
+  "useGitignore": true,
+  "version": "0.2",
+  "words": [
+    "Evgenii",
+    "Jekwwer",
+    "Shiliaev"
+  ]
 }
