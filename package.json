@@ -1,6 +1,6 @@
 {
   "name": "jekwwer-markdown-template",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Template for working with Markdown files",
   "scripts": {
     "check:links": "find . -name '*.md' -not -path './node_modules/*' | xargs markdown-link-check",
