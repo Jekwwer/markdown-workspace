@@ -1,6 +1,7 @@
 {
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "context": ".."
   },
   "customizations": {
     "vscode": {
@@ -57,6 +58,6 @@
       }
     }
   },
-  "name": "Markdown Template",
+  "name": "jekwwer/markdown-template",
   "postCreateCommand": "[ -d docs ] || yarn preview:docs:init"
 }
