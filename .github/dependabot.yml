@@ -10,7 +10,7 @@ updates:
     groups:
       docker-deps:
         patterns:
-          - '*'
+          - "*"
     reviewers:
       - "Jekwwer"
     assignees:
@@ -27,7 +27,7 @@ updates:
     groups:
       github-actions-deps:
         patterns:
-          - '*'
+          - "*"
     reviewers:
       - "Jekwwer"
     assignees:
@@ -44,7 +44,7 @@ updates:
     groups:
       npm-deps:
         patterns:
-          - '*'
+          - "*"
     reviewers:
       - "Jekwwer"
     assignees:
