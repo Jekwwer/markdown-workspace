@@ -2,41 +2,53 @@
 
 version: 2
 updates:
-  # Docker dependencies for the devcontainer
+  # Docker dependencies
   - package-ecosystem: "docker"
     directory: "/.devcontainer"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    groups:
+      docker-deps:
+        patterns:
+          - '*'
     reviewers:
       - "Jekwwer"
     assignees:
       - "Jekwwer"
     commit-message:
-      prefix: "deps"
+      prefix: "deps(docker)"
     open-pull-requests-limit: 5
 
   # GitHub Actions dependencies
   - package-ecosystem: "github-actions"
     directory: ".github"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    groups:
+      github-actions-deps:
+        patterns:
+          - '*'
     reviewers:
       - "Jekwwer"
     assignees:
       - "Jekwwer"
     commit-message:
-      prefix: "deps"
+      prefix: "deps(actions)"
     open-pull-requests-limit: 5
 
   # npm dependencies
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    groups:
+      npm-deps:
+        patterns:
+          - '*'
     reviewers:
       - "Jekwwer"
     assignees:
       - "Jekwwer"
     commit-message:
-      prefix: "deps"
+      prefix: "deps(npm)"
     open-pull-requests-limit: 5
