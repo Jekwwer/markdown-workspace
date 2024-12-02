@@ -17,12 +17,3 @@ RUN apt-get update && \
 
 # Install yarn globally
 RUN npm install -g yarn@${YARN_VERSION}
-
-# Set working directory
-WORKDIR /workspace
-
-# Copy package.json and yarn.lock files
-COPY package.json yarn.lock ./
-
-# Install dependencies with yarn and clear cache
-RUN yarn install --frozen-lockfile && yarn cache clean
