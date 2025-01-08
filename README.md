@@ -4,8 +4,6 @@ A comprehensive template for working with Markdown files,
 equipped with tools for formatting, linting, spell checking, link validation, and more.
 Ideal for documentation projects, blogs, or any Markdown-heavy projects.
 
-<!-- toc -->
-
 - [Markdown Template Repository](#markdown-template-repository)
   - [Features](#features)
   - [Getting Started](#getting-started)
@@ -24,8 +22,6 @@ Ideal for documentation projects, blogs, or any Markdown-heavy projects.
   - [Configuration Files](#configuration-files)
   - [Contributing](#contributing)
   - [License](#license)
-
-<!-- tocstop -->
 
 ## Features
 
@@ -103,10 +99,58 @@ The following scripts are available for managing and checking Markdown files:
 
 ### Table of Contents Generation
 
-- **Generate or Update TOC** in Markdown files:
+- **Generate or Update TOC** in Markdown files containing the `[[toc]]` placeholder:
+
+  Add the `[[toc]]` placeholder where you want the TOC to appear in your Markdown files. For example:
+
+  ```markdown
+  # My Project
+
+  ## Table of Contents
+
+  [[toc]]
+
+  ## Section 1
+
+  Content for section 1.
+
+  ### Subsection 1.1
+
+  Content for subsection 1.1.
+
+  ## Section 2
+
+  Content for section 2.
+  ```
+
+  Then run the following command to generate or update the TOC:
 
   ```bash
   yarn generate:toc
+  ```
+
+- After running the command, the `[[toc]]` placeholder will be replaced with a dynamically generated Table of Contents:
+
+  ```markdown
+  # My Project
+
+  ## Table of Contents
+
+  - [Section 1](#section-1)
+    - [Subsection 1.1](#subsection-11)
+  - [Section 2](#section-2)
+
+  ## Section 1
+
+  Content for section 1.
+
+  ### Subsection 1.1
+
+  Content for subsection 1.1.
+
+  ## Section 2
+
+  Content for section 2.
   ```
 
 ### Metadata Validation
@@ -135,7 +179,7 @@ The following scripts are available for managing and checking Markdown files:
   The project includes a GitHub Actions workflow ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml))
   that automatically deploys the documentation to GitHub Pages whenever changes are pushed to the `main` branch.
 
-  To view the deployed documentation, visit the `gh-pages` branch of your repository at `https://jekwwer.github.io/markdown-template/`.
+  To view the deployed documentation, visit the `gh-pages` branch of your repository at [`https://jekwwer.github.io/markdown-template/`](https://jekwwer.github.io/markdown-template/).
 
 ## Automated Checks
 
@@ -154,4 +198,4 @@ If you'd like to contribute or suggest improvements, please open an issue or sub
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
