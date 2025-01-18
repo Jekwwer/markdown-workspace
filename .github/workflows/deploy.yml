@@ -26,12 +26,12 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: |
-          yarn
+          npm install
 
       # Initialize Docsify Site
       - name: Build Docsify Site
         run: |
-          yarn preview:docs:init
+          npm run preview:docs:init
 
       # Update Docsify Config in index.html
       - name: Update Docsify Config in index.html

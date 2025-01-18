@@ -55,7 +55,7 @@
         ],
         "files.autoSave": "afterDelay",
         "files.autoSaveWhenNoErrors": true,
-        "npm.packageManager": "yarn",
+        "npm.packageManager": "npm",
         "terminal.integrated.shell.linux": "/bin/bash",
         "workbench.activityBar.location": "top",
         "workbench.colorTheme": "Catppuccin Macchiato",
@@ -65,5 +65,5 @@
     }
   },
   "name": "jekwwer/markdown-template",
-  "postCreateCommand": "yarn && [ -d docs ] || yarn preview:docs:init"
+  "postCreateCommand": "npm install && [ -d docs ] || npm run preview:docs:init"
 }

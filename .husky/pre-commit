@@ -2,6 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # Checks for linting errors in staged files
-yarn lint-staged
+npx lint-staged
 # Checks for issues in the Dockerfile
 hadolint ./.devcontainer/Dockerfile || exit 1

@@ -34,17 +34,17 @@
     "remark-frontmatter": "^5.0.0",
     "semantic-release": "^24.2.1"
   },
-  "resolutions": {
+  "overrides": {
     "got": "^11.8.5",
     "marked": "^4.0.10"
   },
   "lint-staged": {
     "*.md": [
-      "yarn check:frontmatter",
-      "yarn check:links",
-      "yarn check:spell",
-      "yarn format",
-      "yarn lint:md"
+      "npm run check:frontmatter",
+      "npm run check:links",
+      "npm run check:spell",
+      "npm run format",
+      "npm run lint:md"
     ]
   },
   "repository": {
