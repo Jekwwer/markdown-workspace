@@ -11,9 +11,17 @@
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules'",
     "prepare": "husky",
     "preview:docs:init": "docsify init docs",
-    "preview:docs": "docsify serve docs"
+    "preview:docs": "docsify serve docs",
+    "release": "semantic-release"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "conventional-changelog": "^6.0.0",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
     "cspell": "^8.17.1",
     "docsify-cli": "^4.4.4",
     "husky": "^9.1.7",
@@ -23,7 +31,8 @@
     "prettier": "^3.4.2",
     "remark": "^15.0.1",
     "remark-cli": "^12.0.1",
-    "remark-frontmatter": "^5.0.0"
+    "remark-frontmatter": "^5.0.0",
+    "semantic-release": "^24.2.1"
   },
   "resolutions": {
     "got": "^11.8.5",
@@ -40,7 +49,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jekwwer/markdown-template"
+    "url": "git+https://github.com/jekwwer/markdown-template"
   },
   "keywords": [
     "github",
