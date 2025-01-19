@@ -1,10 +1,5 @@
 {
-  "ignorePaths": [
-    "*.json",
-    "*.yaml",
-    "*.yml",
-    ".*"
-  ],
+  "ignorePaths": ["*.json", "*.yaml", "*.yml", ".*"],
   "language": "en",
   "useGitignore": true,
   "version": "0.2",

@@ -1,54 +1,54 @@
 # .github/dependabot.yml: Automates dependency updates.
-
+---
 version: 2
 updates:
   # Docker dependencies
-  - package-ecosystem: "docker"
-    directory: "/.devcontainer"
+  - package-ecosystem: 'docker'
+    directory: '/.devcontainer'
     schedule:
-      interval: "monthly"
+      interval: 'monthly'
     groups:
       docker-deps:
         patterns:
-          - "*"
+          - '*'
     reviewers:
-      - "Jekwwer"
+      - 'Jekwwer'
     assignees:
-      - "Jekwwer"
+      - 'Jekwwer'
     commit-message:
-      prefix: "deps(docker)"
+      prefix: 'deps(docker)'
     open-pull-requests-limit: 5
 
   # GitHub Actions dependencies
-  - package-ecosystem: "github-actions"
-    directory: ".github"
+  - package-ecosystem: 'github-actions'
+    directory: '.github'
     schedule:
-      interval: "monthly"
+      interval: 'monthly'
     groups:
       github-actions-deps:
         patterns:
-          - "*"
+          - '*'
     reviewers:
-      - "Jekwwer"
+      - 'Jekwwer'
     assignees:
-      - "Jekwwer"
+      - 'Jekwwer'
     commit-message:
-      prefix: "deps(actions)"
+      prefix: 'deps(actions)'
     open-pull-requests-limit: 5
 
   # npm dependencies
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "monthly"
+      interval: 'monthly'
     groups:
       npm-deps:
         patterns:
-          - "*"
+          - '*'
     reviewers:
-      - "Jekwwer"
+      - 'Jekwwer'
     assignees:
-      - "Jekwwer"
+      - 'Jekwwer'
     commit-message:
-      prefix: "deps(npm)"
+      prefix: 'deps(npm)'
     open-pull-requests-limit: 5
