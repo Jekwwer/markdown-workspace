@@ -32,7 +32,7 @@ Ideal for documentation projects, blogs, or any Markdown-heavy projects.
 - **Table of Contents**: Automatically generates and updates TOCs for large files.
 - **Metadata Validation**: Ensures required front matter fields are present.
 - **Live Preview**: Local preview of documentation as a website using `docsify`.
-- **Pre-commit Hooks**: Automates checks for quality assurance before each commit using `husky`.
+- **Pre-commit Hooks**: Automates checks for quality assurance before each commit using `pre-commit`.
 
 ## Getting Started
 
@@ -183,7 +183,7 @@ The following scripts are available for managing and checking Markdown files:
 
 ## Automated Checks
 
-Using **Husky** and **Lint-staged**, this template will run all relevant checks on staged Markdown files before every commit,
+Using **Pre-commit** this template will run all relevant checks on staged Markdown files before every commit,
 including formatting, linting, spell checking, link checking, and metadata validation.
 
 ## Configuration Files
