@@ -1,6 +1,6 @@
 {
   "name": "jekwwer-markdown-template",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Template for working with Markdown files",
   "scripts": {
     "check:links": "find . -name '*.md' -not -path './node_modules/*' | xargs markdown-link-check",
@@ -9,7 +9,6 @@
     "format": "prettier --write .",
     "generate:toc": "node scripts/generate-toc.js",
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules'",
-    "prepare": "husky",
     "preview:docs:init": "docsify init docs",
     "preview:docs": "docsify serve docs",
     "release": "semantic-release"
@@ -24,8 +23,6 @@
     "conventional-changelog-conventionalcommits": "^8.0.0",
     "cspell": "^8.17.1",
     "docsify-cli": "^4.4.4",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.3.0",
     "markdown-link-check": "^3.13.6",
     "markdownlint-cli2": "^0.17.1",
     "prettier": "^3.4.2",
@@ -37,15 +34,6 @@
   "overrides": {
     "got": "^11.8.5",
     "marked": "^4.0.10"
-  },
-  "lint-staged": {
-    "*.md": [
-      "npm run check:frontmatter",
-      "npm run check:links",
-      "npm run check:spell",
-      "npm run format",
-      "npm run lint:md"
-    ]
   },
   "repository": {
     "type": "git",

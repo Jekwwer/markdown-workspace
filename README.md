@@ -58,7 +58,7 @@ Ideal for documentation projects, blogs, or any Markdown-heavy projects.
 3. **Install Dependencies**:
 
    ```bash
-   yarn
+   npm install
    ```
 
 ## Scripts and Usage
@@ -70,7 +70,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Run Prettier** to format Markdown files:
 
   ```bash
-  yarn format
+  npm run format
   ```
 
 ### Linting
@@ -78,7 +78,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Lint Markdown** files with `markdownlint-cli2`:
 
   ```bash
-  yarn lint:md
+  npm run lint:md
   ```
 
 ### Link Checking
@@ -86,7 +86,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Check Links** in Markdown files to prevent broken URLs:
 
   ```bash
-  yarn check:links
+  npm run check:links
   ```
 
 ### Spell Checking
@@ -94,7 +94,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Run Spell Check** on Markdown files:
 
   ```bash
-  yarn check:spell
+  npm run check:spell
   ```
 
 ### Table of Contents Generation
@@ -126,7 +126,7 @@ The following scripts are available for managing and checking Markdown files:
   Then run the following command to generate or update the TOC:
 
   ```bash
-  yarn generate:toc
+  npm run generate:toc
   ```
 
 - After running the command, the `[[toc]]` placeholder will be replaced with a dynamically generated Table of Contents:
@@ -158,7 +158,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Check Metadata** in Markdown front matter for required fields:
 
   ```bash
-  yarn check:frontmatter
+  npm run check:frontmatter
   ```
 
 ### Live Preview with Docsify
@@ -166,8 +166,8 @@ The following scripts are available for managing and checking Markdown files:
 - **Preview Markdown files** as a website using Docsify:
 
   ```bash
-  yarn preview:docs:init
-  yarn preview:docs
+  npm run preview:docs:init
+  npm run preview:docs
   ```
 
   - Visit `http://localhost:3000` in your browser to see the documentation.

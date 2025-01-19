@@ -23,18 +23,14 @@
       ],
       "settings": {
         "[dockerfile]": {
-          "editor.rulers": [
-            120
-          ]
+          "editor.rulers": [120]
         },
         "[json]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode"
         },
         "[markdown]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode",
-          "editor.rulers": [
-            120
-          ]
+          "editor.rulers": [120]
         },
         "markdownlint.config": {
           "MD013": {
@@ -50,9 +46,7 @@
         "editor.fontSize": 14,
         "editor.formatOnPaste": true,
         "editor.formatOnSave": true,
-        "editor.rulers": [
-          88
-        ],
+        "editor.rulers": [88],
         "files.autoSave": "afterDelay",
         "files.autoSaveWhenNoErrors": true,
         "npm.packageManager": "npm",
@@ -65,5 +59,5 @@
     }
   },
   "name": "jekwwer/markdown-template",
-  "postCreateCommand": "npm install && [ -d docs ] || npm run preview:docs:init"
+  "postCreateCommand": "npm install && pre-commit install"
 }
