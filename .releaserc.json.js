@@ -6,11 +6,11 @@ module.exports = {
       "@semantic-release/release-notes-generator",
       {
         preset: "conventionalcommits",
-        issuePrefixes: ["#", "GH-"],
+        issuePrefixes: ["#"],
         writerOpts: {
           headerPartial: "## {{version}} - {{date}}",
           commitPartial:
-            "- {{type}}: {{message}} ([#{{references.[0].issue}}]({{references.[0].url}}))",
+            "- {{type}}: {{message}} {{#if references.length}}([#{{references.[0].issue}}]({{references.[0].url}})){{/if}}",
           footerPartial: "{{#if notes}}{{~notes~}}{{/if}}",
           groupBy: "type",
           commitGroupsSort: "title",
@@ -30,6 +30,8 @@ module.exports = {
             refactor: "🛠️ Refactoring",
             test: "✅ Testing",
             perf: "⚡ Performance Improvements",
+            ci: "🔧 Continuous Integration",
+            style: "🎨 Style Updates",
           };
           commit.type = typeMap[commit.type] || commit.type;
           return commit;
@@ -45,17 +47,13 @@ module.exports = {
       },
     ],
     "@semantic-release/npm",
-    [
-      "@semantic-release/github",
-      {
-        assets: [],
-      },
-    ],
+    "@semantic-release/github",
     [
       "@semantic-release/git",
       {
-        assets: ["CHANGELOG.md"],
-        message: "chore(release): update changelog [skip ci]",
+        assets: ["CHANGELOG.md", "package.json", "package-lock.json"],
+        message:
+          "chore(release): update changelog and bump version to ${nextRelease.version} [skip ci]",
       },
     ],
   ],

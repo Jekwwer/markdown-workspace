@@ -61,6 +61,5 @@
     "development-environment",
     "project-template"
   ],
-  "license": "MIT",
-  "dependencies": {}
+  "license": "MIT"
 }
