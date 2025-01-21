@@ -14,7 +14,7 @@ max_line_length = 88
 trim_trailing_whitespace = true
 
 # Configuration file settings (e.g., .editorconfig, .gitignore)
-[*.{editorconfig,gitignore}]
+[.*]
 trim_trailing_whitespace = false
 
 # Dockerfile-specific settings
@@ -23,14 +23,19 @@ indent_size = 4
 indent_style = space
 max_line_length = 120
 
-# Markdown-specific settings
-[*.md]
-max_line_length = 120
+# JavaScript-specific settings
+[*.js]
+indent_size = 2
+indent_style = space
 
 # JSON-specific settings
 [*.{json,jsonc}]
 indent_size = 2
 indent_style = space
+
+# Markdown-specific settings
+[*.md]
+max_line_length = 120
 
 # YAML-specific settings
 [*.{yml,yaml}]
