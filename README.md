@@ -16,7 +16,8 @@ Ideal for documentation projects, blogs, or any Markdown-heavy projects.
     - [Spell Checking](#spell-checking)
     - [Table of Contents Generation](#table-of-contents-generation)
     - [Metadata Validation](#metadata-validation)
-    - [Live Preview with Docsify](#live-preview-with-docsify)
+    - [Live Preview with MkDocs](#live-preview-with-mkdocs)
+    - [Build Documentation with MkDocs](#build-documentation-with-mkdocs)
     - [Deployment](#deployment)
   - [Automated Checks](#automated-checks)
   - [Configuration Files](#configuration-files)
@@ -31,7 +32,8 @@ Ideal for documentation projects, blogs, or any Markdown-heavy projects.
 - **Spell Checking**: Catches spelling errors in Markdown files.
 - **Table of Contents**: Automatically generates and updates TOCs for large files.
 - **Metadata Validation**: Ensures required front matter fields are present.
-- **Live Preview**: Local preview of documentation as a website using `docsify`.
+- **Live Preview**: Local preview of documentation as a website using `mkdocs`.
+- **Static Site Generation**: Converts Markdown files into a fully functional static website using `mkdocs`.
 - **Pre-commit Hooks**: Automates checks for quality assurance before each commit using `pre-commit`.
 
 ## Getting Started
@@ -161,16 +163,28 @@ The following scripts are available for managing and checking Markdown files:
   npm run check:frontmatter
   ```
 
-### Live Preview with Docsify
+### Live Preview with MkDocs
 
-- **Preview Markdown files** as a website using Docsify:
+- **Preview Markdown files** as a website using MkDocs:
 
   ```bash
-  npm run preview:docs:init
-  npm run preview:docs
+  npm run serve:docs
   ```
 
-  - Visit `http://localhost:3000` in your browser to see the documentation.
+  - Visit `http://localhost:8000` in your browser to see the documentation.
+
+### Build Documentation with MkDocs
+
+- **Build static site** from Markdown files using MkDocs:
+
+  To create a static website from your documentation, run the following command:
+
+  ```bash
+  npm run build:docs
+  ```
+
+  This command will generate a `site` directory containing the built static files.
+  You can serve these files with any web server or use them for deployment.
 
 ### Deployment
 

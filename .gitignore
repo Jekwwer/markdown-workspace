@@ -153,6 +153,5 @@ dist
 # Ignore cache files
 .cspellcache
 
-# Ignore generated files from docsify or other preview builds
-_site/
-docs/
+# Ignore generated files from mkdocs
+site/

@@ -19,10 +19,10 @@ RUN apt-get update && \
     chmod +x /usr/local/bin/hadolint && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Set up a virtual environment specifically for pre-commit
-RUN python3 -m venv /opt/precommit-env && \
-    /opt/precommit-env/bin/pip install --upgrade pip && \
-    /opt/precommit-env/bin/pip install pre-commit
+# Set up a virtual environment and install pre-commit and mkdocs
+RUN python3 -m venv /opt/venv && \
+    /opt/venv/bin/pip install --upgrade pip && \
+    /opt/venv/bin/pip install pre-commit mkdocs mkdocs-material
 
 # Add virtual environment to PATH
-ENV PATH="/opt/precommit-env/bin:$PATH"
+ENV PATH="/opt/venv/bin:$PATH"

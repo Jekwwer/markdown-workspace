@@ -10,8 +10,9 @@
     "lint:format": "prettier --check --config .prettierrc .",
     "generate:toc": "node scripts/generate-toc.js",
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules'",
-    "preview:docs:init": "docsify init docs",
-    "preview:docs": "docsify serve docs",
+    "serve:docs": "mkdocs serve",
+    "build:docs": "mkdocs build",
+    "deploy:docs": "mkdocs gh-deploy",
     "release": "semantic-release"
   },
   "devDependencies": {
@@ -23,7 +24,6 @@
     "conventional-changelog": "^6.0.0",
     "conventional-changelog-conventionalcommits": "^8.0.0",
     "cspell": "^8.17.1",
-    "docsify-cli": "^4.4.4",
     "markdown-link-check": "^3.13.6",
     "markdownlint-cli2": "^0.17.1",
     "prettier": "^3.4.2",
@@ -43,6 +43,7 @@
   "keywords": [
     "github",
     "markdown",
+    "mkdocs",
     "docker",
     "devcontainer",
     "vscode",

@@ -1,0 +1,6 @@
+site_name: Markdown Template Repository
+site_url: https://jekwwer.github.io/markdown-template
+theme:
+  name: material
+nav:
+  - Home: index.md

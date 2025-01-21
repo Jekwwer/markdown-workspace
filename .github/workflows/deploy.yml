@@ -1,7 +1,7 @@
 # .github/workflows/deploy.yml:
-# Deploys Markdown documentation to GitHub Pages using Docsify.
+# Deploys Markdown documentation to GitHub Pages using MkDocs.
 ---
-name: Deploy Docsify to GitHub Pages
+name: deploy
 
 on:
   push:
@@ -13,44 +13,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the code
-      - name: Checkout code
+      - name: checkout-code
         uses: actions/checkout@v4.2.2
 
-      # Install Node.js
-      - name: Set up Node.js
-        uses: actions/setup-node@v4.1.0
+      - name: setup-python
+        uses: actions/setup-python@v4
         with:
-          node-version: '22'
+          python-version: '3.x'
 
-      # Install dependencies
-      - name: Install dependencies
-        run: |
-          npm install
+      - name: install-mkdocs
+        run: pip install mkdocs mkdocs-material
 
-      # Initialize Docsify Site
-      - name: Build Docsify Site
-        run: |
-          npm run preview:docs:init
-
-      # Update Docsify Config in index.html
-      - name: Update Docsify Config in index.html
-        run: |
-          REPO_URL="https://github.com/${{ github.repository }}"
-          PROJECT_NAME="${{ github.event.repository.name }}"
-          # Update the name and repo fields in index.html
-          sed -i \
-            "s|name: 'Your Project Name'|name: '${PROJECT_NAME}'|" \
-            ./docs/index.html
-          sed -i \
-            -e "s|repo: 'https://github.com/your-username/your-repo'|" \
-            -e "repo: '${REPO_URL}'|" \
-            ./docs/index.html
-
-      # Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4.0.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          publish_branch: gh-pages
+      - name: deploy-to-github-pages
+        run: mkdocs gh-deploy --force

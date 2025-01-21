@@ -4,10 +4,10 @@
   "useGitignore": true,
   "version": "0.2",
   "words": [
-    "docsify",
     "Evgenii",
     "frontmatter",
     "Jekwwer",
+    "mkdocs",
     "Shiliaev",
     "tocstop"
   ]
