@@ -1,14 +1,16 @@
 # Markdown Template Repository
 
 A comprehensive template for working with Markdown files, equipped with tools for formatting, linting, spell checking,
-link validation, and more. This repository is ideal for documentation projects, blogs, or any Markdown-heavy projects.
+link validation, and more. Ideal for documentation projects, blogs, or any Markdown-heavy projects.
+
+> **Note:** This is an example for MkDocs.
 
 ## Getting Started
 
 ### Prerequisites
 
 - [Docker](https://www.docker.com/) (for Devcontainer)
-- [Visual Studio Code](https://code.visualstudio.com/) with Devcontainer extension
+- [Visual Studio Code](https://code.visualstudio.com/) with the Devcontainer extension
 
 ### Setup Instructions
 
@@ -22,7 +24,7 @@ link validation, and more. This repository is ideal for documentation projects, 
 2. **Open in Devcontainer**:
 
    - Open the project in VSCode.
-   - Run `Reopen in Container` to initialize the Devcontainer with all tools.
+   - Run `Reopen in Container` to initialize the Devcontainer.
 
 3. **Install Dependencies**:
 
@@ -30,73 +32,72 @@ link validation, and more. This repository is ideal for documentation projects, 
    npm install
    ```
 
-## Scripts and Usage
+## Usage
 
-The following scripts are available for managing and checking Markdown files:
+Here are the key scripts for working with Markdown files:
 
-### **Formatting**
+- **Format Markdown Files**:
 
-```bash
-npm run format
-```
+  ```bash
+  npm run format
+  ```
 
-### **Linting**
+- **Lint Markdown Files**:
 
-```bash
-npm run lint:md
-```
+  ```bash
+  npm run lint:md
+  ```
 
-### **Link Checking**
+- **Check Links**:
 
-```bash
-npm run check:links
-```
+  ```bash
+  npm run check:links
+  ```
 
-### **Spell Checking**
+- **Spell Check**:
 
-```bash
-npm run check:spell
-```
+  ```bash
+  npm run check:spell
+  ```
 
-### **Table of Contents Generation**
+- **Generate Table of Contents**:
 
-Add a `[[toc]]` placeholder where you want the TOC to appear and run:
+  Add a `[[toc]]` placeholder and run:
 
-```bash
-npm run generate:toc
-```
+  ```bash
+  npm run generate:toc
+  ```
 
-### **Metadata Validation**
+- **Validate Metadata**:
 
-```bash
-npm run check:frontmatter
-```
+  ```bash
+  npm run check:frontmatter
+  ```
 
-### **Live Preview**
+- **Live Preview with MkDocs**:
 
-```bash
-npm run serve:docs
-```
+  ```bash
+  npm run serve:docs
+  ```
 
-### **Build Static Site**
+- **Build Static Site**:
 
-```bash
-npm run build:docs
-```
+  ```bash
+  npm run build:docs
+  ```
 
 ## Deployment
 
-Deploy to GitHub Pages using the provided GitHub Actions workflow:
+Easily deploy your documentation to GitHub Pages:
 
-- The workflow (`.github/workflows/deploy.yml`) deploys the documentation to GitHub Pages automatically
-  when changes are pushed to the `main` branch.
-- Access the deployed documentation at
-  [`https://jekwwer.github.io/markdown-template/`](https://jekwwer.github.io/markdown-template/).
+- Use the included GitHub Actions workflow (`.github/workflows/deploy.yml`) to automate deployment when pushing changes
+  to the `main` branch.
+- Access the site at `https://<username>.github.io/<repository>`.
 
 ## Automated Checks
 
-This template runs checks (formatting, linting, spell checking, link checking, and metadata validation)
-on staged files before every commit using **pre-commit hooks**.
+This template uses **pre-commit hooks** to run quality checks (formatting, linting, spell checking, and link validation)
+on files before each commit.
 
 ## Configuration Files
 

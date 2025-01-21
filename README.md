@@ -1,24 +1,23 @@
 # Markdown Template Repository
 
-A comprehensive template for working with Markdown files,
-equipped with tools for formatting, linting, spell checking, link validation, and more.
-Ideal for documentation projects, blogs, or any Markdown-heavy projects.
+A comprehensive template for working with Markdown files, equipped with tools for formatting, linting, spell checking,
+link validation, and more. Ideal for documentation projects, blogs, or any Markdown-heavy projects.
 
 - [Markdown Template Repository](#markdown-template-repository)
   - [Features](#features)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup Instructions](#setup-instructions)
-  - [Scripts and Usage](#scripts-and-usage)
+  - [Usage](#usage)
     - [Formatting](#formatting)
     - [Linting](#linting)
     - [Link Checking](#link-checking)
     - [Spell Checking](#spell-checking)
     - [Table of Contents Generation](#table-of-contents-generation)
-    - [Metadata Validation](#metadata-validation)
+    - [Validating Metadata in Markdown Files](#validating-metadata-in-markdown-files)
     - [Live Preview with MkDocs](#live-preview-with-mkdocs)
     - [Build Documentation with MkDocs](#build-documentation-with-mkdocs)
-    - [Deployment](#deployment)
+    - [Deployment to GitHub Pages](#deployment-to-github-pages)
   - [Automated Checks](#automated-checks)
   - [Configuration Files](#configuration-files)
   - [Contributing](#contributing)
@@ -26,15 +25,17 @@ Ideal for documentation projects, blogs, or any Markdown-heavy projects.
 
 ## Features
 
-- **Formatting**: Ensures consistent style across Markdown files using Prettier.
-- **Linting**: Enforces Markdown standards with `markdownlint`.
-- **Link Checking**: Validates links to avoid broken URLs.
-- **Spell Checking**: Catches spelling errors in Markdown files.
-- **Table of Contents**: Automatically generates and updates TOCs for large files.
-- **Metadata Validation**: Ensures required front matter fields are present.
-- **Live Preview**: Local preview of documentation as a website using `mkdocs`.
-- **Static Site Generation**: Converts Markdown files into a fully functional static website using `mkdocs`.
-- **Pre-commit Hooks**: Automates checks for quality assurance before each commit using `pre-commit`.
+- **Formatting**: Maintains consistent style across Markdown files using **Prettier**.
+- **Linting**: Enforces Markdown standards and best practices with **markdownlint**.
+- **Link Checking**: Validates internal and external links to prevent broken URLs.
+- **Spell Checking**: Detects and highlights spelling errors in Markdown files.
+- **Table of Contents (TOC)**: Automatically generates and updates TOCs for large files.
+  _(Note: Redundant if using MkDocs, as it generates TOCs automatically.)_
+- **Metadata Validation**: Verifies the presence of required front matter fields for proper document structure.
+- **Live Preview**: Provides a local preview of documentation as a website using **MkDocs**.
+- **Static Site Generation**: Converts Markdown files into a fully functional static website with **MkDocs**.
+- **Automated Deployment**: Deploys documentation to GitHub Pages via GitHub Actions or the `mkdocs gh-deploy` command.
+- **Pre-commit Hooks**: Automates quality assurance checks before each commit with **pre-commit**.
 
 ## Getting Started
 
@@ -63,7 +64,7 @@ Ideal for documentation projects, blogs, or any Markdown-heavy projects.
    npm install
    ```
 
-## Scripts and Usage
+## Usage
 
 The following scripts are available for managing and checking Markdown files:
 
@@ -155,7 +156,7 @@ The following scripts are available for managing and checking Markdown files:
   Content for section 2.
   ```
 
-### Metadata Validation
+### Validating Metadata in Markdown Files
 
 - **Check Metadata** in Markdown front matter for required fields:
 
@@ -186,18 +187,47 @@ The following scripts are available for managing and checking Markdown files:
   This command will generate a `site` directory containing the built static files.
   You can serve these files with any web server or use them for deployment.
 
-### Deployment
+### Deployment to GitHub Pages
 
-- **Deploy to GitHub Pages** using the provided GitHub Actions workflow:
+- **Deploy your documentation** to GitHub Pages with MkDocs:
 
-  The project includes a GitHub Actions workflow ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml))
-  that automatically deploys the documentation to GitHub Pages whenever changes are pushed to the `main` branch.
+  1. Ensure your repository is set up with a `mkdocs.yml` configuration file and the documentation source files.
 
-  To view the deployed documentation, visit the `gh-pages` branch of your repository at [`https://jekwwer.github.io/markdown-template/`](https://jekwwer.github.io/markdown-template/).
+  2. Deploy your documentation using one of the following methods:
+
+     **a. Manual Deployment:**
+     Run the following command to manually deploy the documentation:
+
+     ```bash
+     npm run deploy:docs
+     ```
+
+     This command will:
+
+     - Build the static site.
+     - Push the `site` directory to the `gh-pages` branch of your repository.
+
+     After deployment, your documentation will be available at:
+
+     ```plaintext
+     https://<username>.github.io/<repository-name>/
+     ```
+
+     **b. Automated Deployment with GitHub Actions:**
+     The project includes a GitHub Actions workflow ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml))
+     that automatically deploys the documentation to GitHub Pages whenever changes are pushed to the `main` branch.
+
+     After deployment, your documentation will be available at the `gh-pages` branch of your repository:
+
+     ```plaintext
+     https://<username>.github.io/<repository-name>/
+     ```
+
+  **Note:** Ensure your repository settings have GitHub Pages enabled, and the source is set to the `gh-pages` branch.
 
 ## Automated Checks
 
-Using **Pre-commit** this template will run all relevant checks on staged Markdown files before every commit,
+Using **Pre-commit** this template will run all relevant checks on files before every commit,
 including formatting, linting, spell checking, link checking, and metadata validation.
 
 ## Configuration Files
