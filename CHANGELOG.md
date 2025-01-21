@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 - 2025-01-21
+### 🚀 New Features
+
+* **release:** add custom sort and migrate config to .js ([7aef64b](https://github.com/jekwwer/markdown-template/commit/7aef64bf0924842c7f2f682f27e562eee4b3ff48))
+
 ## 1.2.0 - 2025-01-21
 ### 🎨 Code Style Improvements
 
