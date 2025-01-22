@@ -155,3 +155,6 @@ dist
 
 # Ignore generated files from mkdocs
 site/
+
+### Custom ###
+CHANGELOG.md
