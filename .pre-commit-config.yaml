@@ -66,7 +66,6 @@ repos:
     hooks:
       - id: markdownlint
         name: 'lint markdown files'
-        args: ['--disable', 'MD013', '--enable', 'MD013=line_length=120']
 
   # Lints YAML files
   - repo: https://github.com/adrienverge/yamllint
@@ -111,12 +110,6 @@ repos:
       - id: check-spell
         name: 'check spelling'
         entry: npm run check:spell
-        language: system
-        types: [markdown]
-
-      - id: lint-md
-        name: 'lint markdown files'
-        entry: npm run lint:md
         language: system
         types: [markdown]
 
