@@ -3,12 +3,5 @@
   "language": "en",
   "useGitignore": true,
   "version": "0.2",
-  "words": [
-    "Evgenii",
-    "frontmatter",
-    "Jekwwer",
-    "mkdocs",
-    "Shiliaev",
-    "tocstop"
-  ]
+  "words": ["Evgenii", "frontmatter", "Jekwwer", "mkdocs", "Shiliaev"]
 }
