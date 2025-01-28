@@ -14,7 +14,6 @@ link validation, and more. Ideal for documentation projects, blogs, or any Markd
     - [Link Checking](#link-checking)
     - [Spell Checking](#spell-checking)
     - [Table of Contents Generation](#table-of-contents-generation)
-    - [Validating Metadata in Markdown Files](#validating-metadata-in-markdown-files)
     - [Live Preview with MkDocs](#live-preview-with-mkdocs)
     - [Build Documentation with MkDocs](#build-documentation-with-mkdocs)
     - [Deployment to GitHub Pages](#deployment-to-github-pages)
@@ -31,7 +30,6 @@ link validation, and more. Ideal for documentation projects, blogs, or any Markd
 - **Spell Checking**: Detects and highlights spelling errors in Markdown files.
 - **Table of Contents (TOC)**: Automatically generates and updates TOCs for large files.
   _(Note: Redundant if using MkDocs, as it generates TOCs automatically.)_
-- **Metadata Validation**: Verifies the presence of required front matter fields for proper document structure.
 - **Live Preview**: Provides a local preview of documentation as a website using **MkDocs**.
 - **Static Site Generation**: Converts Markdown files into a fully functional static website with **MkDocs**.
 - **Automated Deployment**: Deploys documentation to GitHub Pages via GitHub Actions or the `mkdocs gh-deploy` command.
@@ -154,14 +152,6 @@ The following scripts are available for managing and checking Markdown files:
   ## Section 2
 
   Content for section 2.
-  ```
-
-### Validating Metadata in Markdown Files
-
-- **Check Metadata** in Markdown front matter for required fields:
-
-  ```bash
-  npm run check:frontmatter
   ```
 
 ### Live Preview with MkDocs
