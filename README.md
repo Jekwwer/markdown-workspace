@@ -71,7 +71,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Run Prettier** to format Markdown files:
 
   ```bash
-  npm run format
+  npm run format:code
   ```
 
 ### Linting
@@ -79,7 +79,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Lint Markdown** files with `markdownlint-cli2`:
 
   ```bash
-  npm run lint:md
+  npm run lint:markdown
   ```
 
 ### Link Checking
@@ -95,7 +95,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Run Spell Check** on Markdown files:
 
   ```bash
-  npm run check:spell
+  npm run check:spelling
   ```
 
 ### Table of Contents Generation
@@ -159,7 +159,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Preview Markdown files** as a website using MkDocs:
 
   ```bash
-  npm run serve:docs
+  npm run docs:serve
   ```
 
   - Visit `http://localhost:8000` in your browser to see the documentation.
@@ -171,7 +171,7 @@ The following scripts are available for managing and checking Markdown files:
   To create a static website from your documentation, run the following command:
 
   ```bash
-  npm run build:docs
+  npm run docs:build
   ```
 
   This command will generate a `site` directory containing the built static files.
@@ -189,7 +189,7 @@ The following scripts are available for managing and checking Markdown files:
      Run the following command to manually deploy the documentation:
 
      ```bash
-     npm run deploy:docs
+     npm run docs:deploy
      ```
 
      This command will:
@@ -222,7 +222,8 @@ including formatting, linting, spell checking, link checking, and metadata valid
 
 ## Configuration Files
 
-- **`.markdownlint.json`**: Configure Markdown linting rules.
+- **`.markdownlint.jsonc`**: Configure Markdown linting rules.
+- **`.markdownlintignore`**: Specify files and directories to ignore during Markdown linting.
 - **`cspell.json`**: Customize spell checking dictionary.
 - **`package.json`**: Manage dependencies and scripts.
 

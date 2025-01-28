@@ -39,13 +39,13 @@ Here are the key scripts for working with Markdown files:
 - **Format Markdown Files**:
 
   ```bash
-  npm run format
+  npm run format:code
   ```
 
 - **Lint Markdown Files**:
 
   ```bash
-  npm run lint:md
+  npm run lint:markdown
   ```
 
 - **Check Links**:
@@ -57,7 +57,7 @@ Here are the key scripts for working with Markdown files:
 - **Spell Check**:
 
   ```bash
-  npm run check:spell
+  npm run check:spelling
   ```
 
 - **Generate Table of Contents**:
@@ -68,22 +68,16 @@ Here are the key scripts for working with Markdown files:
   npm run generate:toc
   ```
 
-- **Validate Metadata**:
-
-  ```bash
-  npm run check:frontmatter
-  ```
-
 - **Live Preview with MkDocs**:
 
   ```bash
-  npm run serve:docs
+  npm run docs:serve
   ```
 
 - **Build Static Site**:
 
   ```bash
-  npm run build:docs
+  npm run docs:build
   ```
 
 ## Deployment
@@ -101,7 +95,8 @@ on files before each commit.
 
 ## Configuration Files
 
-- **`.markdownlint.json`**: Markdown linting rules.
+- **`.markdownlint.jsonc`**: Configure Markdown linting rules.
+- **`.markdownlintignore`**: Specify files and directories to ignore during Markdown linting.
 - **`cspell.json`**: Custom spell checking dictionary.
 - **`package.json`**: Dependency and script management.
 
