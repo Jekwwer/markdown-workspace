@@ -1,5 +1,30 @@
 # Changelog
 
+## 1.3.1 - 2025-01-28
+### 🐞 Bug Fixes
+
+* **cspell:** update ignore paths to check commit messages ([a067412](https://github.com/jekwwer/markdown-template/commit/a06741208728f81233a88c4783dea028a7f908c0))
+
+### 📖 Documentation
+
+* **readme:** update readme with latest changes and mkdocs version ([2d72f2c](https://github.com/jekwwer/markdown-template/commit/2d72f2c578587503377c88d91ce3761274e08d7b))
+* **security:** update SECURITY.md for new supported version ([01d7c72](https://github.com/jekwwer/markdown-template/commit/01d7c72bc5dbef55c68ecb04af1dfb2f1bd44fee))
+
+### 📦 Chores
+
+* **changelog:** add missing version details and sort entries by new config ([19d1f73](https://github.com/jekwwer/markdown-template/commit/19d1f73e982eedc78ae8a944eb606127c573b57f))
+* **gitignore:** update .gitignore to ignore CHANGELOG.md ([2c8e5de](https://github.com/jekwwer/markdown-template/commit/2c8e5de29d51760cc81629960bb067105fa7d2ea))
+* **pre-commit:** standardize hook names and scripts ([9c62403](https://github.com/jekwwer/markdown-template/commit/9c6240360ff03ff9d1744226bc0ab3ca84a8aa57))
+* **pre-commit:** switch cspell hook to repo version ([5304c17](https://github.com/jekwwer/markdown-template/commit/5304c1721616829e03f764b4a0be9b7949aedb81))
+* **pre-commit:** update config with Conventional Commits standard and hooks to skip ([75db623](https://github.com/jekwwer/markdown-template/commit/75db623c475edb0e0509aa4925ae79effce49914))
+* **pre-commit:** update markdownlint-cli dependency ([ca36f1e](https://github.com/jekwwer/markdown-template/commit/ca36f1e5578c50a3af566f8fb12d0f0d54772016))
+
+### 🛠️ Refactoring
+
+* **cspell:** remove redundant exceptions ([9f5e74c](https://github.com/jekwwer/markdown-template/commit/9f5e74cae02f8be7f4fd857f5049304875c4cba2))
+* **deps:** remove unused remark configuration ([c334c89](https://github.com/jekwwer/markdown-template/commit/c334c89b9294409392dc9e5bb7e38882baca0085))
+* **lint:** unify hooks and configurations to markdownlint-cli ([f786617](https://github.com/jekwwer/markdown-template/commit/f7866171a6712c4807ee1e6e4bd8126867b59a4f))
+
 ## 1.3.0 - 2025-01-21
 
 ### 🚀 New Features
