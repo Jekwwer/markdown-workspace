@@ -13,6 +13,5 @@ contact_links:
     about: Read the contribution guidelines before submitting an issue.
   - name: Questions or Community Discussions
     url: https://github.com/jekwwer/markdown-template/discussions
-    about:
-      For quick questions or community discussions, please use our Discussions page
+    about: For quick questions or community discussions, please use our Discussions page
       instead of opening an issue.
