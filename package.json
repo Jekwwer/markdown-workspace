@@ -25,14 +25,14 @@
   "author": "Jekwwer",
   "scripts": {
     "check:links": "find . -name '*.md' -not -path './node_modules/*' | xargs markdown-link-check",
-    "check:spell": "cspell '**/*.md' --gitignore --cache",
-    "format": "prettier --write --config .prettierrc .",
-    "lint:format": "prettier --check --config .prettierrc .",
+    "check:spelling": "cspell '**/*.md' --gitignore --cache",
+    "format:code": "prettier --write --config .prettierrc .",
+    "format:check": "prettier --check --config .prettierrc .",
     "generate:toc": "node scripts/generate-toc.js",
-    "lint:md": "markdownlint '**/*.md'",
-    "serve:docs": "mkdocs serve",
-    "build:docs": "mkdocs build",
-    "deploy:docs": "mkdocs gh-deploy",
+    "lint:markdown": "markdownlint '**/*.md'",
+    "docs:serve": "mkdocs serve",
+    "docs:build": "mkdocs build",
+    "docs:deploy": "mkdocs gh-deploy",
     "release": "semantic-release"
   },
   "devDependencies": {
