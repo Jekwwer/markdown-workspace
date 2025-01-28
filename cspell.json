@@ -1,5 +1,15 @@
 {
-  "ignorePaths": ["*.json", "*.yaml", "*.yml", ".*"],
+  "ignorePaths": [
+    "*.json",
+    "*.yaml",
+    "*.yml",
+    ".devcontainer/*",
+    ".editorconfig",
+    ".gitignore",
+    ".markdownlint.*",
+    ".prettierrc",
+    ".releaserc.js"
+  ],
   "language": "en",
   "useGitignore": true,
   "version": "0.2",
