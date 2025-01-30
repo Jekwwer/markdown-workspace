@@ -6,6 +6,7 @@ module.exports = {
       {
         preset: 'conventionalcommits',
         releaseRules: [
+          { type: 'init', release: 'minor' },
           { type: 'feat', release: 'minor' },
           { type: 'fix', release: 'patch' },
           { type: 'security', release: 'patch' },
@@ -44,6 +45,7 @@ module.exports = {
         presetConfig: {
           header: '# Release Notes',
           types: [
+            { type: 'init', section: '🎉 Initial Release' },
             { type: 'feat', section: '🚀 New Features' },
             { type: 'fix', section: '🐞 Bug Fixes' },
             { type: 'security', section: '🔒 Security Updates' },
@@ -62,6 +64,7 @@ module.exports = {
           groupBy: 'type',
           commitGroupsSort: (a, b) => {
             const order = [
+              '🎉 Initial Release',
               '🚀 New Features',
               '🐞 Bug Fixes',
               '🔒 Security Updates',
@@ -111,7 +114,7 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        assets: ['CHANGELOG.md', 'package.json', 'package-lock.json'],
+        assets: ['CHANGELOG.md'],
         message:
           'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
