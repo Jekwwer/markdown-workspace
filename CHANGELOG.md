@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.0 - 2025-01-30
+### 🚀 New Features
+
+* **releaserc:** add init type for initial release; update release assets ([08b02d3](https://github.com/jekwwer/markdown-template/commit/08b02d3165011680a2a0d40a5575983e4854b83e))
+
+### 🎨 Code Style Improvements
+
+* format about section in issue template ([7632fb5](https://github.com/jekwwer/markdown-template/commit/7632fb54061e308a8cd6b8c0087dd96c67c09ac1))
+
 ## 1.3.1 - 2025-01-28
 ### 🐞 Bug Fixes
 
