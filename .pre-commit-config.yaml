@@ -9,7 +9,6 @@ ci:
   autoupdate_commit_msg: 'ci(deps): bump pre-commit hooks'
   autoupdate_schedule: monthly
   skip:
-    - hadolint # ci can't install system dependencies
     - check-links # ci can't run local hooks
     - autoupdate # ci can't run local hooks
 
@@ -51,14 +50,6 @@ repos:
       # Checks that files with a shebang (#!) are executable
       - id: check-shebang-scripts-are-executable
         name: 'check:shebang-scripts-executable'
-
-  # Lints Dockerfiles
-  - repo: https://github.com/hadolint/hadolint
-    rev: v2.13.1-beta
-    hooks:
-      - id: hadolint
-        name: 'lint:dockerfiles'
-        files: ^\.devcontainer/Dockerfile$
 
   # Lints Markdown files
   - repo: https://github.com/igorshubovych/markdownlint-cli

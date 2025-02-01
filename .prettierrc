@@ -8,12 +8,6 @@
   "printWidth": 88,
   "overrides": [
     {
-      "files": "Dockerfile",
-      "options": {
-        "tabWidth": 4
-      }
-    },
-    {
       "files": "*.md",
       "options": {
         "printWidth": 120

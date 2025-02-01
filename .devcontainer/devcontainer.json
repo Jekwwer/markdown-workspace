@@ -1,7 +1,11 @@
 {
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
+  "name": "jekwwer/markdown-template",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-22",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": true,
+      "version": "3.12"
+    }
   },
   "customizations": {
     "vscode": {
@@ -22,9 +26,6 @@
         "yzhang.markdown-all-in-one"
       ],
       "settings": {
-        "[dockerfile]": {
-          "editor.rulers": [120]
-        },
         "[json]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode"
         },
@@ -58,6 +59,12 @@
       }
     }
   },
-  "name": "jekwwer/markdown-template",
-  "postCreateCommand": "npm install && pre-commit install"
+  "postCreateCommand": "npm install && pip install -r pre-commit mkdocs mkdocs-material && pre-commit install",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "mkdocs-server",
+      "onAutoForward": "openBrowser"
+    }
+  }
 }

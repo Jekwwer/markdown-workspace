@@ -3,7 +3,6 @@
     "*.json",
     "*.yaml",
     "*.yml",
-    ".devcontainer/*",
     ".editorconfig",
     ".gitignore",
     ".markdownlint.*",
