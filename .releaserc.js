@@ -112,9 +112,15 @@ module.exports = {
       },
     ],
     [
+      '@semantic-release/exec',
+      {
+        prepareCmd: `sed -i 's/v[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+/v\${nextRelease.version}/g' SECURITY.md`,
+      },
+    ],
+    [
       '@semantic-release/git',
       {
-        assets: ['CHANGELOG.md', 'package.json', 'package-lock.json'],
+        assets: ['CHANGELOG.md', 'package.json', 'package-lock.json', 'SECURITY.md'],
         message:
           'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
