@@ -5,9 +5,7 @@ link validation, and more. Ideal for documentation projects, blogs, or any Markd
 
 - [Markdown Template Repository](#markdown-template-repository)
   - [Features](#features)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Setup Instructions](#setup-instructions)
+  - [Setup Instructions](#setup-instructions)
   - [Usage](#usage)
     - [Formatting](#formatting)
     - [Linting](#linting)
@@ -35,32 +33,10 @@ link validation, and more. Ideal for documentation projects, blogs, or any Markd
 - **Automated Deployment**: Deploys documentation to GitHub Pages via GitHub Actions or the `mkdocs gh-deploy` command.
 - **Pre-commit Hooks**: Automates quality assurance checks before each commit with **pre-commit**.
 
-## Getting Started
+## Setup Instructions
 
-### Prerequisites
-
-- [Docker](https://www.docker.com/) (for Devcontainer)
-- [Visual Studio Code](https://code.visualstudio.com/) with Devcontainer extension
-
-### Setup Instructions
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/jekwwer/markdown-template.git
-   cd markdown-template
-   ```
-
-2. **Open in Devcontainer**:
-
-   - Open the project in VSCode.
-   - Run `Reopen in Container` to initialize the Devcontainer with all tools.
-
-3. **Install Dependencies**:
-
-   ```bash
-   npm install
-   ```
+This setup is designed for **GitHub Codespaces**.
+Running locally has **not been tested** and may require additional configuration.
 
 ## Usage
 

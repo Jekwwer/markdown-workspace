@@ -5,32 +5,10 @@ link validation, and more. Ideal for documentation projects, blogs, or any Markd
 
 > **Note:** This is an example for MkDocs.
 
-## Getting Started
+## Setup Instructions
 
-### Prerequisites
-
-- [Docker](https://www.docker.com/) (for Devcontainer)
-- [Visual Studio Code](https://code.visualstudio.com/) with the Devcontainer extension
-
-### Setup Instructions
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/jekwwer/markdown-template.git
-   cd markdown-template
-   ```
-
-2. **Open in Devcontainer**:
-
-   - Open the project in VSCode.
-   - Run `Reopen in Container` to initialize the Devcontainer.
-
-3. **Install Dependencies**:
-
-   ```bash
-   npm install
-   ```
+This setup is designed for **GitHub Codespaces**.
+Running locally has **not been tested** and may require additional configuration.
 
 ## Usage
 
