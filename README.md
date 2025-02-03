@@ -52,7 +52,7 @@ The following scripts are available for managing and checking Markdown files:
 
 ### Linting
 
-- **Lint Markdown** files with `markdownlint-cli2`:
+- **Lint Markdown** files with `markdownlint-cli`:
 
   ```bash
   npm run lint:markdown
