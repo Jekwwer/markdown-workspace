@@ -33,12 +33,6 @@
           "editor.defaultFormatter": "esbenp.prettier-vscode",
           "editor.rulers": [120]
         },
-        "markdownlint.config": {
-          "MD013": {
-            "line_length": 120,
-            "code_block_line_length": 120
-          }
-        },
         "[yaml]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode"
         },

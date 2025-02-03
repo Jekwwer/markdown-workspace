@@ -5,7 +5,6 @@
     "*.yml",
     ".editorconfig",
     ".gitignore",
-    ".markdownlint.jsonc",
     ".markdownlintignore",
     ".prettierrc",
     ".releaserc.js"
