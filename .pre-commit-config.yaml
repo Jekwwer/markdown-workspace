@@ -7,9 +7,8 @@ ci:
   autofix_prs: true
   autoupdate_branch: 'main'
   autoupdate_commit_msg: 'ci(deps): bump pre-commit hooks'
-  autoupdate_schedule: monthly
+  autoupdate_schedule: quarterly
   skip:
-    - check-links # ci can't run local hooks
     - autoupdate # ci can't run local hooks
 
 repos:
@@ -58,6 +57,12 @@ repos:
       - id: markdownlint
         name: 'lint:markdown'
 
+  - repo: https://github.com/tcort/markdown-link-check
+    rev: v3.13.6
+    hooks:
+      - id: markdown-link-check
+        name: 'check:markdown-links'
+
   # Lints YAML files
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.35.1
@@ -103,12 +108,6 @@ repos:
 
   - repo: local
     hooks:
-      - id: check-links
-        name: 'check:markdown-links'
-        entry: npm run check:links
-        language: system
-        types: [markdown]
-
       - id: autoupdate
         name: 'update:pre-commit-hooks'
         entry: pre-commit autoupdate
