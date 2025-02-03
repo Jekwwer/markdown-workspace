@@ -12,6 +12,13 @@
       "options": {
         "printWidth": 120
       }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 0
+      }
     }
-  ]
+  ],
+  "insertFinalNewline": true
 }
