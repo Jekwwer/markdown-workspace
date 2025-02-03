@@ -1,5 +1,35 @@
 # Changelog
 
+## 1.5.0 - 2025-02-03
+### 🚀 New Features
+
+* **pre-commit:** switch to repo-based hook for markdown link check and adjust autoupdate schedule ([006bd77](https://github.com/jekwwer/markdown-template/commit/006bd77ff7ebb376bbce7e709efb9e6e62282df6))
+* **release:** automate version update for SECURITY.md ([b0197fd](https://github.com/jekwwer/markdown-template/commit/b0197fd004d7f314a7325f18b487d5270065ffb2))
+
+### 🐞 Bug Fixes
+
+* **release:** restore version update assets for semantic-release ([d7d9d60](https://github.com/jekwwer/markdown-template/commit/d7d9d608283524f8ffb894fd7b57b6422f0c78ae))
+
+### 📦 Dependency Updates
+
+* **npm:** bump cspell and markdownlint-cli to latest versions ([d35a43a](https://github.com/jekwwer/markdown-template/commit/d35a43ad7c11f08d7b7158223de0f8bcd7915a40)), closes [#9](https://github.com/jekwwer/markdown-template/issues/9)
+* **pre-commit:** bump cspell version to v8.17.2 ([71d3734](https://github.com/jekwwer/markdown-template/commit/71d37344f243365284cef0669566b8b9e1be598a))
+
+### 📖 Documentation
+
+* **readme:** update markdown linting tool reference ([f0a5a9f](https://github.com/jekwwer/markdown-template/commit/f0a5a9fd9fd4a4f684d0ed34c00ca2a2a7160b3b))
+* **readme:** update README with new setup info for dev environment ([4a775d9](https://github.com/jekwwer/markdown-template/commit/4a775d9548a5fdf176b94183af2955d6f7b70fe2))
+
+### 📦 Chores
+
+* **config:** update config files to ensure tool sync and avoid conflicts ([cc2522a](https://github.com/jekwwer/markdown-template/commit/cc2522aa57d648db14df0edb21b3d21f585324fe))
+* **security:** update document to reflect support for latest version ([f8148d3](https://github.com/jekwwer/markdown-template/commit/f8148d3176e70c72d831e6b0075e76f4d3e32943))
+
+### 🛠️ Refactoring
+
+* **config:** simplify configuration and rename jsonc files ([4050368](https://github.com/jekwwer/markdown-template/commit/4050368e862328a9fde1b5140c083c9acba87b75))
+* **devcontainer:** transition to Python+NPM devcontainer configuration ([da70207](https://github.com/jekwwer/markdown-template/commit/da7020711d3bc62d0ed76afbe868735b6598a38a))
+
 ## 1.4.0 - 2025-01-30
 ### 🚀 New Features
 
