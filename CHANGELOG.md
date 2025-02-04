@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.6.0 - 2025-02-04
+### 🚀 New Features
+
+* **release:** add sync rule for patch triggering in repos ([4b59d04](https://github.com/jekwwer/markdown-template/commit/4b59d042abedcdb590c53e4adec410e3abc21436))
+
+### 🐞 Bug Fixes
+
+* **devcontainer:** correct image version and pip install command ([429100b](https://github.com/jekwwer/markdown-template/commit/429100baa3acd241b6b64fdea09e74b4dbdb5813))
+
 ## 1.5.0 - 2025-02-03
 ### 🚀 New Features
 

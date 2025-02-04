@@ -9,7 +9,7 @@ We actively maintain and provide security updates for the following versions:
 
 | Version            | Supported             |
 | ------------------ | --------------------- |
-| [`v1.5.0`][v1.5.0] | ✅ Actively supported |
+| [`v1.6.0`][v1.6.0] | ✅ Actively supported |
 | Older versions     | ❌ Not supported      |
 
 ---
@@ -43,4 +43,4 @@ please feel free to contact me at [evgenii.shiliaev@jekwwer.com][evgenii.shiliae
 [evgenii.shiliaev@jekwwer.com]: mailto:evgenii.shiliaev@jekwwer.com
 [report@jekwwer.com]: mailto:report@jekwwer.com
 [security-advisories]: https://github.com/jekwwer/markdown-template/security/advisories
-[v1.5.0]: https://github.com/Jekwwer/markdown-template/tree/v1.5.0
+[v1.6.0]: https://github.com/Jekwwer/markdown-template/tree/v1.6.0
