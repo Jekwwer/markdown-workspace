@@ -16,6 +16,7 @@ module.exports = {
           { type: 'style', release: false },
           { type: 'refactor', release: false },
           { type: 'chore', release: false },
+          { type: 'chore', scope: 'sync', release: 'patch' },
           { type: 'ci', release: false },
           { type: 'test', scope: 'critical', release: 'patch' },
           { type: 'test', release: false },
