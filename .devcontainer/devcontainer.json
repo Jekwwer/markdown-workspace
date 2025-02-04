@@ -1,6 +1,6 @@
 {
   "name": "jekwwer/markdown-template",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-22",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
       "installTools": true,
@@ -53,7 +53,7 @@
       }
     }
   },
-  "postCreateCommand": "npm install && pip install -r pre-commit mkdocs mkdocs-material && pre-commit install",
+  "postCreateCommand": "npm install && pip install pre-commit mkdocs mkdocs-material && pre-commit install",
   "forwardPorts": [8000],
   "portsAttributes": {
     "8000": {
