@@ -1,6 +1,6 @@
 # Security Policy
 
-This document outlines the security policy for the `markdown-template` repository
+This document outlines the security policy for the `markdown-workspace` repository
 and provides instructions for reporting vulnerabilities.
 
 ## Supported Versions
@@ -42,5 +42,5 @@ please feel free to contact me at [evgenii.shiliaev@jekwwer.com][evgenii.shiliae
 
 [evgenii.shiliaev@jekwwer.com]: mailto:evgenii.shiliaev@jekwwer.com
 [report@jekwwer.com]: mailto:report@jekwwer.com
-[security-advisories]: https://github.com/jekwwer/markdown-template/security/advisories
-[v1.6.0]: https://github.com/Jekwwer/markdown-template/tree/v1.6.0
+[security-advisories]: https://github.com/jekwwer/markdown-workspace/security/advisories
+[v1.6.0]: https://github.com/Jekwwer/markdown-workspace/tree/v1.6.0

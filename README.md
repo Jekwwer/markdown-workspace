@@ -1,9 +1,9 @@
-# Markdown Template Repository
+# Markdown Workspace
 
 A comprehensive template for working with Markdown files, equipped with tools for formatting, linting, spell checking,
 link validation, and more. Ideal for documentation projects, blogs, or any Markdown-heavy projects.
 
-- [Markdown Template Repository](#markdown-template-repository)
+- [Markdown Workspace](#markdown-workspace)
   - [Features](#features)
   - [Setup Instructions](#setup-instructions)
   - [Usage](#usage)

@@ -1,4 +1,4 @@
-# Markdown Template Repository
+# Markdown Workspace
 
 A comprehensive template for working with Markdown files, equipped with tools for formatting, linting, spell checking,
 link validation, and more. Ideal for documentation projects, blogs, or any Markdown-heavy projects.
@@ -85,4 +85,4 @@ We welcome contributions! Please open an issue or submit a pull request to sugge
 ## License
 
 This project is licensed under the MIT License.
-See the [LICENSE](https://github.com/Jekwwer/markdown-template/blob/main/LICENSE) file for more details.
+See the [LICENSE](https://github.com/Jekwwer/markdown-workspace/blob/main/LICENSE) file for more details.

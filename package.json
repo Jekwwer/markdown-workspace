@@ -1,5 +1,5 @@
 {
-  "name": "jekwwer-markdown-template",
+  "name": "jekwwer-markdown-workspace",
   "version": "1.6.0",
   "description": "A comprehensive template for working with Markdown files, equipped with tools for formatting, linting, spell checking, link validation, and more.",
   "keywords": [
@@ -12,13 +12,13 @@
     "development-environment",
     "project-template"
   ],
-  "homepage": "https://github.com/Jekwwer/markdown-template#readme",
+  "homepage": "https://github.com/Jekwwer/markdown-workspace#readme",
   "bugs": {
-    "url": "https://github.com/Jekwwer/markdown-template/issues"
+    "url": "https://github.com/Jekwwer/markdown-workspace/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jekwwer/markdown-template.git"
+    "url": "git+https://github.com/jekwwer/markdown-workspace.git"
   },
   "license": "MIT",
   "author": "Jekwwer",

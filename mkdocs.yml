@@ -1,5 +1,5 @@
-site_name: Markdown Template Repository
-site_url: https://jekwwer.github.io/markdown-template
+site_name: Markdown Workspace
+site_url: https://jekwwer.github.io/markdown-workspace
 theme:
   name: material
 nav:

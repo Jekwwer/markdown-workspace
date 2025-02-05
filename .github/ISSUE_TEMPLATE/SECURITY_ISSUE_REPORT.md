@@ -45,4 +45,4 @@ _Note: For any security issues, please contact me privately at [report@jekwwer.c
 - [ ] I have provided steps to reproduce the issue and an assessment of the potential impact.
 
 [report@jekwwer.com]: mailto:report@jekwwer.com
-[security-advisories]: https://github.com/jekwwer/markdown-template/security/advisories
+[security-advisories]: https://github.com/jekwwer/markdown-workspace/security/advisories
