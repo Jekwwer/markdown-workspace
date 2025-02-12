@@ -6,6 +6,7 @@
     "github",
     "markdown",
     "mkdocs",
+    "mkdocs-material",
     "devcontainer",
     "vscode",
     "template",
