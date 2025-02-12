@@ -7,6 +7,14 @@
       "version": "3.12"
     }
   },
+  "postCreateCommand": "npm install && pip install pre-commit mkdocs mkdocs-material && pre-commit install",
+  "forwardPorts": [8888],
+  "portsAttributes": {
+    "8888": {
+      "label": "mkdocs-server",
+      "onAutoForward": "openBrowser"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -51,14 +59,6 @@
         "workbench.iconTheme": "catppuccin-macchiato",
         "yaml.format.enable": true
       }
-    }
-  },
-  "postCreateCommand": "npm install && pip install pre-commit mkdocs mkdocs-material && pre-commit install",
-  "forwardPorts": [8000],
-  "portsAttributes": {
-    "8000": {
-      "label": "mkdocs-server",
-      "onAutoForward": "openBrowser"
     }
   }
 }
