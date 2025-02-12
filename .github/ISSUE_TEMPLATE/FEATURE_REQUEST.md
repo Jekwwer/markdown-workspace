@@ -67,4 +67,8 @@ _Note: For small adjustments or minor changes, please use our [Discussions][disc
 - [ ] I have checked that this feature has not already been requested.
 - [ ] I have discussed this feature with the maintainers/community.
 
-[discussions]: https://github.com/jekwwer/markdown-workspace/discussions
+[discussions]: https://github.com/Jekwwer/markdown-workspace/discussions
+
+<!-- Template by Evgenii Shiliaev - Licensed under CC BY 4.0 -->
+<!-- https://github.com/Jekwwer/markdown-docs-kit -->
+<!-- Licensed under: https://github.com/Jekwwer/markdown-docs-kit/blob/main/LICENSE -->

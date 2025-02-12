@@ -1,26 +1,22 @@
+<!-- Template by Evgenii Shiliaev - Licensed under CC BY 4.0 -->
+
 # Markdown Workspace
 
-A comprehensive template for working with Markdown files, equipped with tools for formatting, linting, spell checking,
-link validation, and more. Ideal for documentation projects, blogs, or any Markdown-heavy projects.
+![GitHub Release](https://img.shields.io/github/v/release/Jekwwer/markdown-workspace?logo=github&link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Freleases%2Flatest)
+![GitHub Release Date](https://img.shields.io/github/release-date/Jekwwer/markdown-workspace?link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Freleases%2Flatest)
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/Jekwwer/markdown-workspace/latest?link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Freleases%2Flatest)
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Jekwwer/markdown-workspace?logo=librariesdotio&logoColor=%23FFFFFF)
+![Issues](https://img.shields.io/github/issues/Jekwwer/markdown-workspace?logo=github&link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Fissues)
+![Maintained](https://img.shields.io/maintenance/yes/2025)
+![GitHub License](https://img.shields.io/github/license/Jekwwer/markdown-workspace?link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Fblob%2Fmain%2FLICENSE)
 
-- [Markdown Workspace](#markdown-workspace)
-  - [Features](#features)
-  - [Setup Instructions](#setup-instructions)
-  - [Usage](#usage)
-    - [Formatting](#formatting)
-    - [Linting](#linting)
-    - [Link Checking](#link-checking)
-    - [Spell Checking](#spell-checking)
-    - [Table of Contents Generation](#table-of-contents-generation)
-    - [Live Preview with MkDocs](#live-preview-with-mkdocs)
-    - [Build Documentation with MkDocs](#build-documentation-with-mkdocs)
-    - [Deployment to GitHub Pages](#deployment-to-github-pages)
-  - [Automated Checks](#automated-checks)
-  - [Configuration Files](#configuration-files)
-  - [Contributing](#contributing)
-  - [License](#license)
+## Project Overview 🚀
 
-## Features
+This repository is a comprehensive template for working with Markdown files, equipped with tools for formatting,
+linting, spell checking, link validation, and more. Ideal for documentation projects, blogs,
+or any Markdown-heavy projects.
+
+## Features ✨
 
 - **Formatting**: Maintains consistent style across Markdown files using **Prettier**.
 - **Linting**: Enforces Markdown standards and best practices with **markdownlint**.
@@ -33,12 +29,12 @@ link validation, and more. Ideal for documentation projects, blogs, or any Markd
 - **Automated Deployment**: Deploys documentation to GitHub Pages via GitHub Actions or the `mkdocs gh-deploy` command.
 - **Pre-commit Hooks**: Automates quality assurance checks before each commit with **pre-commit**.
 
-## Setup Instructions
+## Installation 📦
 
 This setup is designed for **GitHub Codespaces**.
 Running locally has **not been tested** and may require additional configuration.
 
-## Usage
+## Usage 🛠️
 
 The following scripts are available for managing and checking Markdown files:
 
@@ -191,22 +187,26 @@ The following scripts are available for managing and checking Markdown files:
 
   **Note:** Ensure your repository settings have GitHub Pages enabled, and the source is set to the `gh-pages` branch.
 
-## Automated Checks
+## Contributing 👥
 
-Using **Pre-commit** this template will run all relevant checks on files before every commit,
-including formatting, linting, spell checking, link checking, and metadata validation.
+Contributions are welcome! Please read the [Contributing Guidelines][CONTRIBUTING] and check the [issues][issues] page.
 
-## Configuration Files
+## License 🛡️
 
-- **`.markdownlint.jsonc`**: Configure Markdown linting rules.
-- **`.markdownlintignore`**: Specify files and directories to ignore during Markdown linting.
-- **`cspell.json`**: Customize spell checking dictionary.
-- **`package.json`**: Manage dependencies and scripts.
+This project is licensed under the [MIT License][LICENSE].
 
-## Contributing
+## Contact 📬
 
-If you'd like to contribute or suggest improvements, please open an issue or submit a pull request.
+For questions, reach out via [evgenii.shiliaev@jekwwer.com][evgenii.shiliaev@jekwwer.com] or open an [issue][issues].
 
-## License
+---
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This document is based on a template by [Evgenii Shiliaev][evgenii-shiliaev-github],
+licensed under [CC BY 4.0][jekwwer-markdown-docs-kit-license]. All additional content is licensed under [LICENSE][LICENSE].
+
+[CONTRIBUTING]: CONTRIBUTING.md
+[LICENSE]: LICENSE
+[evgenii-shiliaev-github]: https://github.com/Jekwwer
+[evgenii.shiliaev@jekwwer.com]: mailto:evgenii.shiliaev@jekwwer.com
+[issues]: https://github.com/Jekwwer/markdown-workspace/issues
+[Jekwwer-markdown-docs-kit-license]: https://github.com/Jekwwer/markdown-docs-kit/blob/main/LICENSE
