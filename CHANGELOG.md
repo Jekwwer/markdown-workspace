@@ -1,5 +1,31 @@
 # Changelog
 
+## 1.7.0 - 2025-02-14
+### 🚀 New Features
+
+* **docs:** add Codespaces badge to README ([ae0dd28](https://github.com/Jekwwer/markdown-workspace/commit/ae0dd28e7c81bc2d79f5e850c8775603f0d6f2a0))
+
+### 📖 Documentation
+
+* update documentation using Jekwwer/markdown-docs-kit v1.4.0 templates ([45d61b3](https://github.com/Jekwwer/markdown-workspace/commit/45d61b35d43aee8cedff4ae28adb1f2eec7b21f6))
+* update guidelines with recent changes in Jekwwer/markdown-docs-kit v1.5.0 ([c0ec98b](https://github.com/Jekwwer/markdown-workspace/commit/c0ec98b8dab432e18c6ff54e9a94861dcd4f9fd8))
+
+### 📦 Chores
+
+* add relevant keyword to package.json ([0e8cfed](https://github.com/Jekwwer/markdown-workspace/commit/0e8cfedc1296a86368812a7a91c644e6606a3111))
+* adjust repository URL casing ([7fa8cf5](https://github.com/Jekwwer/markdown-workspace/commit/7fa8cf5a05c5a88400cd1ee218d67b1deab2c924))
+* **devcontainer:** simplify devcontainer and VSCode settings ([efcb083](https://github.com/Jekwwer/markdown-workspace/commit/efcb0832051c2e554ddc21cf599d5dc76da51444))
+* **prettier:** update prettier mirror and config cleanup ([7f7ccdf](https://github.com/Jekwwer/markdown-workspace/commit/7f7ccdfdee6326c60b5a346e8362b5927d0cfae9))
+* **repo:** update repository name to "markdown-workspace" ([11aec48](https://github.com/Jekwwer/markdown-workspace/commit/11aec48bd0096ccfcd0c118cadb37c6ff9e755b1))
+
+### 🎨 Code Style Improvements
+
+* **docs:** enforce kebab-case for link identifiers ([8bda00a](https://github.com/Jekwwer/markdown-workspace/commit/8bda00aef62069c6f6375631aaa35ed7965be1bc))
+
+### 🛠️ Refactoring
+
+* **devcontainer:** reorganize container setup to top ([672f3e1](https://github.com/Jekwwer/markdown-workspace/commit/672f3e10cb19e4d1f6f02658ab62d10d9e52eb51))
+
 ## 1.6.0 - 2025-02-04
 ### 🚀 New Features
 
