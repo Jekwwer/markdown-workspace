@@ -34,6 +34,8 @@ or any Markdown-heavy projects.
 This setup is designed for **GitHub Codespaces**.
 Running locally has **not been tested** and may require additional configuration.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)][open-in-codespaces]
+
 ## Usage 🛠️
 
 The following scripts are available for managing and checking Markdown files:
@@ -210,3 +212,4 @@ licensed under [CC BY 4.0][jekwwer-markdown-docs-kit-license]. All additional co
 [evgenii.shiliaev@jekwwer.com]: mailto:evgenii.shiliaev@jekwwer.com
 [issues]: https://github.com/Jekwwer/markdown-workspace/issues
 [Jekwwer-markdown-docs-kit-license]: https://github.com/Jekwwer/markdown-docs-kit/blob/main/LICENSE
+[open-in-codespaces]: https://codespaces.new/Jekwwer/markdown-workspace
