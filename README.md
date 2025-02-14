@@ -211,5 +211,5 @@ licensed under [CC BY 4.0][jekwwer-markdown-docs-kit-license]. All additional co
 [evgenii-shiliaev-github]: https://github.com/Jekwwer
 [evgenii.shiliaev@jekwwer.com]: mailto:evgenii.shiliaev@jekwwer.com
 [issues]: https://github.com/Jekwwer/markdown-workspace/issues
-[Jekwwer-markdown-docs-kit-license]: https://github.com/Jekwwer/markdown-docs-kit/blob/main/LICENSE
+[jekwwer-markdown-docs-kit-license]: https://github.com/Jekwwer/markdown-docs-kit/blob/main/LICENSE
 [open-in-codespaces]: https://codespaces.new/Jekwwer/markdown-workspace
