@@ -8,7 +8,9 @@
     }
   },
   "postCreateCommand": "npm install && pip install pre-commit mkdocs mkdocs-material && pre-commit install",
-  "forwardPorts": [8888],
+  "forwardPorts": [
+    8888
+  ],
   "portsAttributes": {
     "8888": {
       "label": "mkdocs-server",
@@ -18,8 +20,6 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "catppuccin.catppuccin-vsc",
-        "catppuccin.catppuccin-vsc-icons",
         "editorconfig.editorconfig",
         "esbenp.prettier-vscode",
         "streetsidesoftware.code-spell-checker",
@@ -27,37 +27,28 @@
         "github.copilot-chat",
         "github.vscode-github-actions",
         "github.vscode-pull-request-github",
-        "ms-azuretools.vscode-docker",
-        "ms-vscode-remote.remote-containers",
-        "redhat.vscode-yaml",
-        "shd101wyy.markdown-preview-enhanced",
-        "yzhang.markdown-all-in-one"
+        "ms-vscode-remote.remote-containers"
       ],
       "settings": {
-        "[json]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
         "[markdown]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode",
-          "editor.rulers": [120]
+          "editor.rulers": [
+            120
+          ]
         },
-        "[yaml]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "editor.bracketPairColorization.enabled": true,
-        "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.fontSize": 14,
         "editor.formatOnPaste": true,
         "editor.formatOnSave": true,
-        "editor.rulers": [88],
-        "files.autoSave": "afterDelay",
+        "editor.rulers": [
+          88
+        ],
+        "files.autoSave": "onFocusChange",
         "files.autoSaveWhenNoErrors": true,
         "npm.packageManager": "npm",
-        "terminal.integrated.shell.linux": "/bin/bash",
-        "workbench.activityBar.location": "top",
-        "workbench.colorTheme": "Catppuccin Macchiato",
-        "workbench.iconTheme": "catppuccin-macchiato",
-        "yaml.format.enable": true
+        "prettier.prettierPath": "./node_modules/prettier",
+        "prettier.configPath": "./.prettierrc",
+        "terminal.integrated.shell.linux": "/bin/bash"
       }
     }
   }
