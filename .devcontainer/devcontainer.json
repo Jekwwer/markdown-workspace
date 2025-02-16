@@ -22,16 +22,15 @@
       "extensions": [
         "editorconfig.editorconfig",
         "esbenp.prettier-vscode",
-        "streetsidesoftware.code-spell-checker",
         "github.copilot",
         "github.copilot-chat",
         "github.vscode-github-actions",
         "github.vscode-pull-request-github",
-        "ms-vscode-remote.remote-containers"
+        "ms-vscode-remote.remote-containers",
+        "streetsidesoftware.code-spell-checker"
       ],
       "settings": {
         "[markdown]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode",
           "editor.rulers": [
             120
           ]
