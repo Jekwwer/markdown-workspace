@@ -2,23 +2,6 @@
 ---
 version: 2
 updates:
-  # Docker dependencies
-  - package-ecosystem: 'docker'
-    directory: '/.devcontainer'
-    schedule:
-      interval: 'monthly'
-    groups:
-      docker-deps:
-        patterns:
-          - '*'
-    reviewers:
-      - 'Jekwwer'
-    assignees:
-      - 'Jekwwer'
-    commit-message:
-      prefix: 'deps(docker)'
-    open-pull-requests-limit: 5
-
   # GitHub Actions dependencies
   - package-ecosystem: 'github-actions'
     directory: '.github'
