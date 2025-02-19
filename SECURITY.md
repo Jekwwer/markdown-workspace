@@ -1,5 +1,3 @@
-<!-- Template by Evgenii Shiliaev - Licensed under CC BY 4.0 -->
-
 # Security Policy
 
 This document outlines the security policy for the `Jekwwer/markdown-workspace` repository

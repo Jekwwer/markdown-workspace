@@ -1,6 +1,3 @@
-<!-- Contributor Covenant Code of Conduct - Licensed under CC BY 4.0 -->
-<!-- Template by Evgenii Shiliaev - Licensed under CC BY 4.0 -->
-
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge

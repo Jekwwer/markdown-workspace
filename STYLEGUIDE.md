@@ -1,5 +1,3 @@
-<!-- Template by Evgenii Shiliaev - Licensed under CC BY 4.0 -->
-
 # Style Guide
 
 This document outlines the style guide for **Jekwwer/markdown-workspace**.

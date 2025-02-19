@@ -1,5 +1,3 @@
-<!-- Template by Evgenii Shiliaev - Licensed under CC BY 4.0 -->
-
 # Markdown Workspace
 
 ![GitHub Release](https://img.shields.io/github/v/release/Jekwwer/markdown-workspace?logo=github&link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Freleases%2Flatest)
