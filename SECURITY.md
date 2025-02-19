@@ -15,9 +15,6 @@ I actively maintain and provide security updates for the following versions:
 If your project is using an unsupported version, I recommend upgrading to the latest version
 to benefit from security updates and fixes.
 
-For non-software repositories (e.g., documentation or templates), version-specific risks are not applicable.
-However, any discovered vulnerabilities should still be reported promptly.
-
 ## Reporting a Vulnerability
 
 If you discover a security vulnerability in this repository:
