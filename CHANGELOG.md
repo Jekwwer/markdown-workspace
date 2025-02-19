@@ -1,5 +1,29 @@
 # Changelog
 
+## 1.7.1 - 2025-02-19
+### 🐞 Bug Fixes
+
+* **workflow:** update setup-python action reference to direct version ([4958b0d](https://github.com/Jekwwer/markdown-workspace/commit/4958b0d95d56f80115a41754966c28eeddd769dc))
+
+### 📖 Documentation
+
+* **config:** add a note and reference to .editorconfig ([30165ac](https://github.com/Jekwwer/markdown-workspace/commit/30165acb53ee5c04b8382aa884aa013b68f065a1))
+* **README.md:** add info on format:check script ([ed60a29](https://github.com/Jekwwer/markdown-workspace/commit/ed60a294d548cb890c589801a307ab3f03d7a5de))
+
+### 📦 Chores
+
+* **devcontainer:** downgrade image version for GitHub workflows compatibility ([d378d7f](https://github.com/Jekwwer/markdown-workspace/commit/d378d7f5889c90fcf8cef6696d6a2cb33fec0f98))
+* **docs:** remove template attribution comments ([7f7b602](https://github.com/Jekwwer/markdown-workspace/commit/7f7b6029dbdac077541a84e37fc4d9b8e9df9097))
+* **editorconfig:** add max_line_length setting for JSON files ([989b139](https://github.com/Jekwwer/markdown-workspace/commit/989b139ec419d037713c70dbd7610cb0c898fe96))
+* **releaserc:** update release configuration ([6107d70](https://github.com/Jekwwer/markdown-workspace/commit/6107d70440d304a482f8563374a7f27aed0154d0))
+* **SECURITY.md:** remove outdated template text ([97e9cbc](https://github.com/Jekwwer/markdown-workspace/commit/97e9cbc349cc99aa3f0b94e09ec6e59250487e6c))
+
+### 🛠️ Refactoring
+
+* **dependabot:** remove Docker support ([d603665](https://github.com/Jekwwer/markdown-workspace/commit/d6036651c64748544165c017f56b2faedf6fdb7c))
+* **devcontainer:** reorder extensions and remove redundant setting ([1ff9950](https://github.com/Jekwwer/markdown-workspace/commit/1ff9950238c6a703d30d7b54ddf9b4d6b9fd2098))
+* **gitignore:** enhance header distinctiveness for sections ([ec10d3d](https://github.com/Jekwwer/markdown-workspace/commit/ec10d3dee583dbeb6059fd6cf90fce2f173e7148))
+
 ## 1.7.0 - 2025-02-14
 ### 🚀 New Features
 
