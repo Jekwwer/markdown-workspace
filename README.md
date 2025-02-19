@@ -46,6 +46,12 @@ The following scripts are available for managing and checking Markdown files:
   npm run format:code
   ```
 
+  For a formatting check without modifying, run:
+
+  ```bash
+  npm run format:check
+  ```
+
 ### Linting
 
 - **Lint Markdown** files with `markdownlint-cli`:
