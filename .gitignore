@@ -2,7 +2,7 @@
 # Based on: https://github.com/github/gitignore/blob/main/Node.gitignore
 #           https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-# https://github.com/github/gitignore/blob/main/Node.gitignore
+### https://github.com/github/gitignore/blob/main/Node.gitignore ###
 # Logs
 logs
 *.log
@@ -136,7 +136,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+### https://github.com/github/gitignore/blob/main/VisualStudio.gitignore ###
 # VS Code files for those working on multiple tools
 .vscode/*
 !.vscode/settings.json
@@ -148,13 +148,11 @@ dist
 # Local History for Visual Studio Code
 .history/
 
-# Custom
+### Custom ###
+CHANGELOG.md
 
 # Ignore cache files
 .cspellcache
 
 # Ignore generated files from mkdocs
 site/
-
-### Custom ###
-CHANGELOG.md
