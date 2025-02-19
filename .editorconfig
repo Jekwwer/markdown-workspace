@@ -25,9 +25,9 @@ trim_trailing_whitespace = false
 [*.js]
 # No overrides, but this section helps indicate SVG files exist in the project.
 
-# JSON-specific settings (Present in the repository but no special rules needed)
+# JSON-specific settings
 [*.{json,jsonc}]
-# No overrides, but this section helps indicate SVG files exist in the project.
+max_line_length = off
 
 # Markdown-specific settings
 [*.md]
