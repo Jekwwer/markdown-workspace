@@ -9,7 +9,7 @@ I actively maintain and provide security updates for the following versions:
 
 | Version            | Supported             |
 | ------------------ | --------------------- |
-| [`v1.7.1`][v1.7.1] | ✅ Actively supported |
+| [`v1.7.2`][v1.7.2] | ✅ Actively supported |
 | Older versions     | ❌ Not supported      |
 
 If your project is using an unsupported version, I recommend upgrading to the latest version
@@ -51,4 +51,4 @@ licensed under [CC BY 4.0][jekwwer-markdown-docs-kit-license]. All additional co
 [evgenii.shiliaev@jekwwer.com]: mailto:evgenii.shiliaev@jekwwer.com
 [report@jekwwer.com]: mailto:report@jekwwer.com
 [security-advisories]: https://github.com/Jekwwer/markdown-workspace/security/advisories
-[v1.7.1]: https://github.com/Jekwwer/markdown-workspace/tree/v1.7.1
+[v1.7.2]: https://github.com/Jekwwer/markdown-workspace/tree/v1.7.2

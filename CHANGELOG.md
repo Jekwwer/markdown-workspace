@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.2 - 2025-02-23
+### 📦 Dependency Updates
+
+* **npm:** bump prettier to 3.5.1 and semantic-release to 24.2.3 ([#10](https://github.com/Jekwwer/markdown-workspace/issues/10)) ([ae3ce06](https://github.com/Jekwwer/markdown-workspace/commit/ae3ce06f09f676922b04bf8ebd7e51162368678d))
+
 ## 1.7.1 - 2025-02-19
 ### 🐞 Bug Fixes
 
