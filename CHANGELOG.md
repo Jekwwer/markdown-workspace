@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.3 - 2025-02-26
+### 🐞 Bug Fixes
+
+* **ci:** correct directory path in dependabot configuration ([9caf0d5](https://github.com/Jekwwer/markdown-workspace/commit/9caf0d58af0dc816b2685905a1588ef822c18ef7))
+
 ## 1.7.2 - 2025-02-23
 ### 📦 Dependency Updates
 
