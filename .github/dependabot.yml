@@ -4,7 +4,7 @@ version: 2
 updates:
   # GitHub Actions dependencies
   - package-ecosystem: 'github-actions'
-    directory: '.github'
+    directory: '.github/workflows'
     schedule:
       interval: 'monthly'
     groups:
