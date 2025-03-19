@@ -245,8 +245,25 @@ to use the new OAuth2 endpoints as described in the migration guide.
 
 ## Testing and Quality Assurance
 
-This repository does not include automated tests since its primary focus is on providing a comprehensive markdown
-development environment. Quality is ensured through manual reviews.
+This repository intentionally excludes automated tests to focus on delivering a robust markdown development environment.
+Instead, quality is maintained through rigorous manual reviews.
+
+Task execution is managed via npm scripts.
+For comprehensive configuration details, please refer to the `package.json` file.
+
+**Key npm Scripts:**
+
+- **check:links** – Scans Markdown files (excluding `node_modules`) for broken URLs.
+- **check:spelling** – Performs spell checking on Markdown files.
+- **format:check** – Validates formatting without modifying files.
+- **format:write** – Auto-formats Markdown files using Prettier.
+- **generate:toc** – Generates or updates a Table of Contents where the `[[toc]]` placeholder is found.
+- **lint:markdown** – Lints Markdown files using markdownlint.
+- **docs:serve** – Serves the documentation locally via MkDocs.
+- **docs:build** – Builds a static site from the Markdown documentation using MkDocs.
+- **docs:deploy** – Deploys the built documentation to GitHub Pages using MkDocs.
+- **semantic-release** – For continuous integration versioning and changelogs
+  (not intended for direct use by contributors).
 
 ## Proposing Changes
 
