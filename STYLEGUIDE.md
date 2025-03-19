@@ -85,8 +85,7 @@ are essential.
 ├── docs                                ├── # documentation files
 │   └── index.md                        │   └── # main documentation index
 ├── .editorconfig                       ├── # editor configuration
-├── .gitignore                          ├── # files to ignore in Git
-├── .markdownlintignore                 ├── # markdown lint ignore rules
+├── .gitignore                          ├── # files to ignore in Git and markdown linting
 ├── .markdownlint.json                  ├── # markdown linting configuration
 ├── .pre-commit-config.yaml             ├── # pre-commit hook configuration
 ├── .prettierrc                         ├── # Prettier configuration
@@ -139,9 +138,9 @@ are essential.
 
 Key configuration files in the repository include:
 
-- `.gitignore`: Specifies files and directories to exclude from version control.
+- `.gitignore`: Specifies files and directories to exclude from version control and Markdown linting.
 - `.editorconfig`: Defines coding styles across editors.
-- `.markdownlint.json` and `.markdownlintignore`: Establish Markdown linting rules and exclusions.
+- `.markdownlint.json`: Configures Markdown linting rules.
 - `.pre-commit-config.yaml`: Specifies pre-commit hooks.
 - `.prettierrc`: Contains formatting rules.
 - `.releaserc.js`: Configures the semantic release process and versioning.
@@ -236,7 +235,7 @@ These settings are enforced by the `.editorconfig` and `.prettierrc` configurati
   Formats code based on the configuration in `.prettierrc`:
   - Enforces semicolons, single quotes, trailing commas, and a print width of 88 characters (except 120 for Markdown).
 - **Markdownlint:**
-  Applies consistent style rules to Markdown files as configured in `.markdownlint.json` and `.markdownlintignore`.
+  Applies consistent style rules to Markdown files as configured in `.markdownlint.json`.
 - **Pre-commit Hooks:**
   The `.pre-commit-config.yaml` is set up to run various checks, including formatting and linting, before commits.
 - **Yamllint:**

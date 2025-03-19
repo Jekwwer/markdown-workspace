@@ -29,7 +29,7 @@
     "format:code": "prettier --write --config .prettierrc .",
     "format:check": "prettier --check --config .prettierrc .",
     "generate:toc": "node scripts/generate-toc.js",
-    "lint:markdown": "markdownlint '**/*.md'",
+    "lint:markdown": "markdownlint '**/*.md' --ignore-path .gitignore",
     "docs:serve": "mkdocs serve",
     "docs:build": "mkdocs build",
     "docs:deploy": "mkdocs gh-deploy",
