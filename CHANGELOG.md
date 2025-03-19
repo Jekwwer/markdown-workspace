@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.8.0 - 2025-03-19
+### 🚀 New Features
+
+* **markdown-lint:** integrate .gitignore for markdown lint exclusions ([0c1588c](https://github.com/Jekwwer/markdown-workspace/commit/0c1588ca794b8882ec1434d87748b21cacc45cea))
+
+### 📦 Dependency Updates
+
+* **ci:** update GitHub Actions dependencies ([3778d1f](https://github.com/Jekwwer/markdown-workspace/commit/3778d1f578e059cf7a8e539b31e90a26b14a0fe1))
+* **npm:** update cspell and prettier dependencies ([8ddeb4f](https://github.com/Jekwwer/markdown-workspace/commit/8ddeb4fc1d1bea1419a9e6ce89662877e06b1e0f))
+* **pre-commit:** update pre-commit hooks to latest versions ([9bbf3ba](https://github.com/Jekwwer/markdown-workspace/commit/9bbf3ba76d38835c00c411c01d7bc1f1318ae6ff))
+
+### 📖 Documentation
+
+* **CONTRIBUTING.md:** add npm script details ([2427e57](https://github.com/Jekwwer/markdown-workspace/commit/2427e57799a8e1a2501fc1c01faf94dedad14355))
+* update documentation with recent changes in Jekwwer/markdown-docs-kit v1.5.2 ([796d196](https://github.com/Jekwwer/markdown-workspace/commit/796d196c797c6503737cbf4b3be98698c94ef065))
+
+### 🛠️ Refactoring
+
+* **devcontainer:** remove redundant settings and specify feature versions ([2e5ba5b](https://github.com/Jekwwer/markdown-workspace/commit/2e5ba5bf23228041affd063cdb90ece4bd021c4d))
+* **scripts:** rename formatting script for clarity and update documentation ([b982edf](https://github.com/Jekwwer/markdown-workspace/commit/b982edf9841da2d746ad4738edca0b1e7efed899))
+
 ## 1.7.3 - 2025-02-26
 ### 🐞 Bug Fixes
 
