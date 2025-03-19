@@ -2,7 +2,7 @@
   "name": "jekwwer/markdown-workspace",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
   "features": {
-    "ghcr.io/devcontainers/features/python:1": {
+    "ghcr.io/devcontainers/features/python:1.7.0": {
       "installTools": true,
       "version": "3.12"
     }
@@ -36,7 +36,6 @@
           ]
         },
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.fontSize": 14,
         "editor.formatOnPaste": true,
         "editor.formatOnSave": true,
         "editor.rulers": [
@@ -46,8 +45,7 @@
         "files.autoSaveWhenNoErrors": true,
         "npm.packageManager": "npm",
         "prettier.prettierPath": "./node_modules/prettier",
-        "prettier.configPath": "./.prettierrc",
-        "terminal.integrated.shell.linux": "/bin/bash"
+        "prettier.configPath": "./.prettierrc"
       }
     }
   }
