@@ -48,7 +48,7 @@ The key tools include:
 
 - **check:links:** `find . -name '*.md' -not -path './node_modules/*' | xargs markdown-link-check`
 - **check:spelling:** `cspell '**/*.md' --gitignore --cache`
-- **format:code:** `prettier --write --config .prettierrc .`
+- **format:write:** `prettier --write --config .prettierrc .`
 - **format:check:** `prettier --check --config .prettierrc .`
 - **generate:toc:** `node scripts/generate-toc.js`
 - **lint:markdown:** `markdownlint '**/*.md'`

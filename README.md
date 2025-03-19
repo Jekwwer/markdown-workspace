@@ -43,7 +43,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Run Prettier** to format Markdown files:
 
   ```bash
-  npm run format:code
+  npm run format:write
   ```
 
   For a formatting check without modifying, run:
