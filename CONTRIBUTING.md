@@ -8,7 +8,7 @@ Whether you're fixing a bug, proposing new features, or improving documentation,
 
 1. **Fork the Repository**:
 
-   - Click the "Fork" button on the top-right corner of the repository page to create your copy.
+   Click the "Fork" button on the top-right corner of the repository page to create your copy.
 
 2. **Clone Your Fork**:
 
@@ -29,7 +29,7 @@ Whether you're fixing a bug, proposing new features, or improving documentation,
 
 ## Branching and Versioning
 
-We use a trunk-based strategy with **Semantic Release** for automated versioning and changelog generation.
+This project employs a trunk-based strategy with **Semantic Release** for automated versioning and changelog generation.
 
 ### Branching Strategy
 
@@ -42,9 +42,9 @@ Branch names should follow these conventions:
 
 ### Versioning Strategy
 
-We follow **Semantic Versioning (SemVer)** in the format **`MAJOR.MINOR.PATCH`**:
+This project adheres to **Semantic Versioning (SemVer)** in the format **`MAJOR.MINOR.PATCH`**:
 
-- **MAJOR:** For incompatible API changes.
+- **MAJOR:** For large breaking changes that significantly alter the project's behavior or structure.12,
 - **MINOR:** For new, backward-compatible features.
 - **PATCH:** For backward-compatible bug fixes.
 
@@ -101,9 +101,6 @@ providing essential details about changes.
 [TECHNIQUES]
  - <details about methods, tools, or approaches used>
 
-[BREAKING CHANGE]
- - <description of breaking changes and user adaptation details>
-
 [PURPOSE]
  - <reason for the change or issue being addressed>
 
@@ -116,6 +113,20 @@ providing essential details about changes.
 [REFERENCES]
  - <links to documentation, code reviews, or other resources>
 ```
+
+### Handling Breaking Changes
+
+- **Header Notation:**
+  To denote a breaking change, append a `!` to the `<type>` in the commit header. For example, use `feat!:` or `fix!:`.
+
+- **Commit Body:**
+  In the commit body (within the `<detailed description>`), include a separate line starting with:
+
+  ```plaintext
+  BREAKING CHANGE: <description of breaking changes and necessary adaptations>
+  ```
+
+  This line should provide details about the breaking change and any required user adaptations.
 
 ### Template Fields
 
@@ -138,7 +149,6 @@ providing essential details about changes.
 - **`[DEPENDENCIES ADDED/UPDATED/REMOVED]`:** _(if applicable)_ Details any changes to project dependencies.
 - **`[FEATURES/CHANGES]`:** Describes new features, updates, or significant changes.
 - **`[TECHNIQUES]`:** _(Optional)_ Describes methods, tools, or approaches used.
-- **`[BREAKING CHANGE]`:** _(if applicable)_ Specifies any breaking changes and necessary user adaptations.
 - **`[PURPOSE]`:** Explains the rationale behind the change.
 - **`[IMPACT]`:** Describes the impact on the project, users, or performance.
 - **`[FIXES/CLOSES/RESOLVES]`:** _(if applicable)_ References related issues or tasks (e.g., `#123`).
@@ -179,19 +189,59 @@ Implemented OAuth2 login functionality, allowing users to authenticate with Goog
  - OAuth2 Documentation: https://example.com/oauth2
 ```
 
+### Example Commit Message with Breaking Change
+
+```plaintext
+feat!(auth): overhaul login API for enhanced security
+
+Refactored the authentication system to adopt a more secure and modern approach.
+This change deprecates the old login endpoints and introduces a new OAuth2-based mechanism.
+
+BREAKING CHANGE: The previous login endpoints have been removed. Clients must update their integrations
+to use the new OAuth2 endpoints as described in the migration guide.
+
+[FILES ADDED]
+ - src/auth/oauth2_new.js
+ - docs/migration-guide.md
+
+[FILES MODIFIED]
+ - src/auth/index.js
+ - src/auth/login.js
+
+[DEPENDENCIES ADDED]
+ - new-auth-library
+
+[FEATURES/CHANGES]
+ - Transitioned to OAuth2 for authentication.
+ - Enhanced token management and session handling.
+
+[PURPOSE]
+ - Improve overall security and modernize the authentication flow.
+
+[IMPACT]
+ - Breaking change: Requires client updates to use the new endpoints.
+
+[FIXES]
+ - #124
+
+[REFERENCES]
+ - Migration Guide: https://example.com/migration-guide
+```
+
 ## Dependency and Build Management
 
 ### Dependency Handling
 
-- Dependencies are managed via `package.json` and `package-lock.json`.
-- **Dependabot** is configured to monitor and update dependencies for npm packages, GitHub Actions, and Docker.
+- **NPM Dependencies:**
+  Managed via `package.json` and `package-lock.json`.
+
+- **Dependabot:**
+  The `.github/dependabot.yml` file monitors and updates dependencies for npm packages and GitHub Actions.
 
 ### Environment Configuration
 
 - The environment is primarily configured using `.devcontainer/devcontainer.json` for container setup,
   along with VSCode settings and customizations.
-- The repository does not include any `.env` files.
-  Follow best practices for environment configuration if you choose to use them.
 
 ## Testing and Quality Assurance
 
@@ -202,8 +252,7 @@ development environment. Quality is ensured through manual reviews.
 
 1. **Check for Existing Issues**:
    Before opening a new issue or pull request, see if it’s already discussed in
-   [Issues][issues] or
-   [Discussions][discussions].
+   [Issues][issues] or [Discussions][discussions].
 
 2. **Create a Branch**:
 
@@ -212,7 +261,7 @@ development environment. Quality is ensured through manual reviews.
    ```
 
 3. **Make and Test Changes**:
-   Keep changes consistent with our [`STYLEGUIDE.md`][STYLEGUIDE].
+   Keep changes consistent with the repository's [`STYLEGUIDE.md`][STYLEGUIDE].
 
 4. **Commit**:
 

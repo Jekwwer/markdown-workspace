@@ -44,18 +44,9 @@ link validation, TOC generation, previewing, HTML building, and deployment using
 
 The project leverages npm for managing tools wherever possible.
 If an npm package is available, it is used; otherwise, custom scripts in JavaScript or Python can be implemented.
-The key tools include:
+Key tasks are handled via npm scripts.
 
-- **check:links:** `find . -name '*.md' -not -path './node_modules/*' | xargs markdown-link-check`
-- **check:spelling:** `cspell '**/*.md' --gitignore --cache`
-- **format:write:** `prettier --write --config .prettierrc .`
-- **format:check:** `prettier --check --config .prettierrc .`
-- **generate:toc:** `node scripts/generate-toc.js`
-- **lint:markdown:** `markdownlint '**/*.md'`
-- **docs:serve:** `mkdocs serve`
-- **docs:build:** `mkdocs build`
-- **docs:deploy:** `mkdocs gh-deploy`
-- **release:** `semantic-release`
+For a complete list of these commands and further details, please refer to our [Contributing Guidelines][CONTRIBUTING].
 
 ### Target Audience
 
@@ -275,7 +266,7 @@ See [Comments and Documentation][COMMENTS-AND-DOCUMENTATION] from [Code Formatti
   For example:
 
   ```markdown
-  See our [Code of Conduct][CODE_OF_CONDUCT].
+  See [Code of Conduct][CODE_OF_CONDUCT].
 
   [CODE_OF_CONDUCT]: CODE_OF_CONDUCT.md
   ```
