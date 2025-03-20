@@ -3,8 +3,7 @@
   "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
   "features": {
     "ghcr.io/devcontainers/features/python:1.7.0": {
-      "installTools": true,
-      "version": "3.12"
+      "installTools": true
     }
   },
   "postCreateCommand": "npm install && pip install pre-commit mkdocs mkdocs-material && pre-commit install",
