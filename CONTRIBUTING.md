@@ -253,8 +253,8 @@ For comprehensive configuration details, please refer to the `package.json` file
 
 **Key npm Scripts:**
 
-- **check:links** – Scans Markdown files (excluding `node_modules`) for broken URLs.
-- **check:spelling** – Performs spell checking on Markdown files.
+- **links:check** – Scans Markdown files (excluding `node_modules`) for broken URLs.
+- **spell:check** – Performs spell checking on Markdown files.
 - **format:check** – Validates formatting without modifying files.
 - **format:write** – Auto-formats Markdown files using Prettier.
 - **generate:toc** – Generates or updates a Table of Contents where the `[[toc]]` placeholder is found.

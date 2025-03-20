@@ -59,7 +59,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Check Links** in Markdown files to prevent broken URLs:
 
   ```bash
-  npm run check:links
+  npm run links:check
   ```
 
 ### Spell Checking
@@ -67,7 +67,7 @@ The following scripts are available for managing and checking Markdown files:
 - **Run Spell Check** on Markdown files:
 
   ```bash
-  npm run check:spelling
+  npm run spell:check
   ```
 
 ### Table of Contents Generation
