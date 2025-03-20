@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.8.1 - 2025-03-20
+### 📦 Dependency Updates
+
+* **actions:** bump setup-node and cache actions to latest versions ([6dd766c](https://github.com/Jekwwer/markdown-workspace/commit/6dd766c2394898f84eaa73a4748b2ff5bf0cac92)), closes [#14](https://github.com/Jekwwer/markdown-workspace/issues/14) [#16](https://github.com/Jekwwer/markdown-workspace/issues/16) [#14](https://github.com/Jekwwer/markdown-workspace/issues/14) [#16](https://github.com/Jekwwer/markdown-workspace/issues/16)
+* **npm:** bump markdown-link-check from to 3.13.7 ([#15](https://github.com/Jekwwer/markdown-workspace/issues/15)) ([5ff1550](https://github.com/Jekwwer/markdown-workspace/commit/5ff155067c9624c41a4b4e709b5c9f5df00f1f8b))
+
+### 📦 Chores
+
+* **devcontainer:** remove specific Python version dependency ([089320c](https://github.com/Jekwwer/markdown-workspace/commit/089320cb6110bd699086f62f3164b296cdc8614d))
+
+### 🛠️ Refactoring
+
+* **scripts:** update script names and documentation for consistency ([9cba375](https://github.com/Jekwwer/markdown-workspace/commit/9cba375ef68a9ae00cd5daaa14b15475a7aba179))
+
 ## 1.8.0 - 2025-03-19
 ### 🚀 New Features
 
