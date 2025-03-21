@@ -10,22 +10,50 @@
 
 ## Project Overview 🚀
 
-This repository is a comprehensive template for working with Markdown files, equipped with tools for formatting,
-linting, spell checking, link validation, and more. Ideal for documentation projects, blogs,
-or any Markdown-heavy projects.
+This repository is a comprehensive template for working with Markdown files.
+It comes equipped with tools for code formatting and linting, link validation, TOC generation, spell checking,
+a ready-to-use devcontainer, custom VS Code settings, essential repository files, automated releasing,
+and extensive documentation to support effective project management and customization.
 
 ## Features ✨
 
-- **Formatting**: Maintains consistent style across Markdown files using **Prettier**.
-- **Linting**: Enforces Markdown standards and best practices with **markdownlint**.
-- **Link Checking**: Validates internal and external links to prevent broken URLs.
-- **Spell Checking**: Detects and highlights spelling errors in Markdown files.
-- **Table of Contents (TOC)**: Automatically generates and updates TOCs for large files.
+- **Devcontainer:**
+  Provides an Ubuntu-based environment with Python and Node support, custom VS Code settings and extensions,
+  and a local PostgreSQL service.
+
+- **Formatting:**
+  Ensures consistent code style using **Prettier**, **EditorConfig**, and other tools.
+
+- **Linting:**
+  Enforces Markdown standards and best practices with **markdownlint**.
+
+- **Link Checking:**
+  Validates internal and external links to prevent broken URLs.
+
+- **Spell Checking:**
+  Detects and highlights spelling errors in Markdown files.
+
+- **Table of Contents (TOC):**
+  Automatically generates and updates TOCs for large files.
   _(Note: Redundant if using MkDocs, as it generates TOCs automatically.)_
-- **Live Preview**: Provides a local preview of documentation as a website using **MkDocs**.
-- **Static Site Generation**: Converts Markdown files into a fully functional static website with **MkDocs**.
-- **Automated Deployment**: Deploys documentation to GitHub Pages via GitHub Actions or the `mkdocs gh-deploy` command.
-- **Pre-commit Hooks**: Automates quality assurance checks before each commit with **pre-commit**.
+
+- **Live Preview:**
+  Provides a local preview of documentation as a website using **MkDocs**.
+
+- **Static Site Generation:**
+  Converts Markdown files into a fully functional static website with MkDocs.
+
+- **Automated Deployment:**
+  Deploys documentation to GitHub Pages via GitHub Actions or the `mkdocs gh-deploy` command.
+
+- **Pre-commit Hooks:**
+  Automates quality checks before each commit.
+
+- **Release Automation:**
+  Manages releases automatically.
+
+- **Dependency Updates Automation:**
+  Keeps dependencies up-to-date via **Dependabot**.
 
 ## Installation 📦
 
