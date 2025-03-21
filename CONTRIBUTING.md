@@ -245,25 +245,28 @@ to use the new OAuth2 endpoints as described in the migration guide.
 
 ## Testing and Quality Assurance
 
-This repository intentionally excludes automated tests to focus on delivering a robust markdown development environment.
-Instead, quality is maintained through rigorous manual reviews.
+The project uses a mix of manual and automated approaches.
 
-Task execution is managed via npm scripts.
-For comprehensive configuration details, please refer to the `package.json` file.
+### Manual Testing
 
-**Key npm Scripts:**
+Run the following scripts (see `package.json` for details) to verify code quality:
 
-- **links:check** – Scans Markdown files (excluding `node_modules`) for broken URLs.
-- **spell:check** – Performs spell checking on Markdown files.
-- **format:check** – Validates formatting without modifying files.
-- **format:write** – Auto-formats Markdown files using Prettier.
-- **generate:toc** – Generates or updates a Table of Contents where the `[[toc]]` placeholder is found.
-- **lint:markdown** – Lints Markdown files using markdownlint.
-- **docs:serve** – Serves the documentation locally via MkDocs.
-- **docs:build** – Builds a static site from the Markdown documentation using MkDocs.
-- **docs:deploy** – Deploys the built documentation to GitHub Pages using MkDocs.
-- **semantic-release** – For continuous integration versioning and changelogs
-  (not intended for direct use by contributors).
+- **format:check** – Verifies code formatting for non-SQL files.
+- **format:write** – Auto-formats code for non-SQL files.
+- **lint:markdown** – Lints Markdown files.
+- **links:check** – Scans Markdown files for broken URLs.
+- **spell:check** – Checks files for typos.
+- **docs:serve** – Serve documentation locally.
+- **docs:build** – Build the documentation.
+- **docs:deploy** – Deploy documentation (restricted to maintainers).
+
+### Automated Testing
+
+Automated checks run via pre-commit hooks in both CI and locally:
+
+- They enforce linting and formatting standards before commits.
+- In-editor autoformatting is active through VSCode settings in `.devcontainer/devcontainer.json`
+  (`formatOnPaste` & `formatOnSave`).
 
 ## Proposing Changes
 
