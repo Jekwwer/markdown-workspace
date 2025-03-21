@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.8.2 - 2025-03-21
+### 🐞 Bug Fixes
+
+* **workflow:** use script from package.json for release consistency ([b1d4700](https://github.com/Jekwwer/markdown-workspace/commit/b1d4700364492e2b5c0befae90409f8868fc713e))
+
+### 📖 Documentation
+
+* **CONTRIBUTING.md:** update testing and QA section for clarity ([a858d9e](https://github.com/Jekwwer/markdown-workspace/commit/a858d9e0f6f1a7a4d07b54a0b1840b9ba6d7503e))
+* **README.md:** enrich project information and feature details ([12383b3](https://github.com/Jekwwer/markdown-workspace/commit/12383b30775d2b5148ede73b678feab7b7dfc4c1))
+* **STYLEGUIDE.md:** update and enhance style guide documentation ([59b34a4](https://github.com/Jekwwer/markdown-workspace/commit/59b34a43d51b8cbf523f75f19bd690d8c546939c))
+
+### 📦 Chores
+
+* **release:** remove API docs release rule ([8a86754](https://github.com/Jekwwer/markdown-workspace/commit/8a8675459b9f7bc4efac3a23c37805a594c74e0a))
+
+### 🛠️ Refactoring
+
+* **pre-commit:** improve clarity of pre-commit autoupdate commit message ([90ad1c5](https://github.com/Jekwwer/markdown-workspace/commit/90ad1c55b957b69d96715c8ba43b1c39812954d1))
+
 ## 1.8.1 - 2025-03-20
 ### 📦 Dependency Updates
 
