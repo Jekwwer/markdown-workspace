@@ -6,7 +6,7 @@ ci:
   autofix_commit_msg: 'ci(pre-commit): auto fixes from pre-commit hooks'
   autofix_prs: true
   autoupdate_branch: 'main'
-  autoupdate_commit_msg: 'ci(deps): bump pre-commit hooks'
+  autoupdate_commit_msg: 'deps(pre-commit): bump pre-commit hooks to latest version'
   autoupdate_schedule: quarterly
   skip:
     - autoupdate # ci can't run local hooks
