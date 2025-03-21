@@ -1,0 +1,816 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jekwwer.github.io/markdown-workspace/">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Markdown Workspace</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#markdown-workspace" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Markdown Workspace" class="md-header__button md-logo" aria-label="Markdown Workspace" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Markdown Workspace
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Markdown Workspace" class="md-nav__button md-logo" aria-label="Markdown Workspace" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Markdown Workspace
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Overview 🚀
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features ✨
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation 📦
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage 🛠️
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage 🛠️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link Checking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spell-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spell Checking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-of-contents-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents Generation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live-preview-with-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Live Preview with MkDocs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-documentation-with-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build Documentation with MkDocs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment-to-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment to GitHub Pages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing 👥
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License 🛡️
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contact 📬
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Overview 🚀
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features ✨
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation 📦
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage 🛠️
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage 🛠️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link Checking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spell-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spell Checking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-of-contents-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents Generation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live-preview-with-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Live Preview with MkDocs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-documentation-with-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build Documentation with MkDocs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment-to-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment to GitHub Pages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing 👥
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License 🛡️
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contact 📬
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="markdown-workspace">Markdown Workspace</h1>
+<p><img alt="GitHub Release" src="https://img.shields.io/github/v/release/Jekwwer/markdown-workspace?logo=github&amp;link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Freleases%2Flatest" />
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Jekwwer/markdown-workspace?link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Freleases%2Flatest" />
+<img alt="GitHub commits since latest release" src="https://img.shields.io/github/commits-since/Jekwwer/markdown-workspace/latest?link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Freleases%2Flatest" />
+<img alt="Libraries.io dependency status for GitHub repo" src="https://img.shields.io/librariesio/github/Jekwwer/markdown-workspace?logo=librariesdotio&amp;logoColor=%23FFFFFF" />
+<img alt="Issues" src="https://img.shields.io/github/issues/Jekwwer/markdown-workspace?logo=github&amp;link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Fissues" />
+<img alt="Maintained" src="https://img.shields.io/maintenance/yes/2025" />
+<img alt="GitHub License" src="https://img.shields.io/github/license/Jekwwer/markdown-workspace?link=https%3A%2F%2Fgithub.com%2FJekwwer%2Fmarkdown-workspace%2Fblob%2Fmain%2FLICENSE" /></p>
+<h2 id="project-overview">Project Overview 🚀</h2>
+<p>This repository is a comprehensive template for working with Markdown files.
+It comes equipped with tools for code formatting and linting, link validation, TOC generation, spell checking,
+a ready-to-use devcontainer, custom VS Code settings, essential repository files, automated releasing,
+and extensive documentation to support effective project management and customization.</p>
+<h2 id="features">Features ✨</h2>
+<ul>
+<li>
+<p><strong>Devcontainer:</strong>
+  Provides an Ubuntu-based environment with Python and Node support, custom VS Code settings and extensions,
+  and a local PostgreSQL service.</p>
+</li>
+<li>
+<p><strong>Formatting:</strong>
+  Ensures consistent code style using <strong>Prettier</strong>, <strong>EditorConfig</strong>, and other tools.</p>
+</li>
+<li>
+<p><strong>Linting:</strong>
+  Enforces Markdown standards and best practices with <strong>markdownlint</strong>.</p>
+</li>
+<li>
+<p><strong>Link Checking:</strong>
+  Validates internal and external links to prevent broken URLs.</p>
+</li>
+<li>
+<p><strong>Spell Checking:</strong>
+  Detects and highlights spelling errors in Markdown files.</p>
+</li>
+<li>
+<p><strong>Table of Contents (TOC):</strong>
+  Automatically generates and updates TOCs for large files.
+  <em>(Note: Redundant if using MkDocs, as it generates TOCs automatically.)</em></p>
+</li>
+<li>
+<p><strong>Live Preview:</strong>
+  Provides a local preview of documentation as a website using <strong>MkDocs</strong>.</p>
+</li>
+<li>
+<p><strong>Static Site Generation:</strong>
+  Converts Markdown files into a fully functional static website with MkDocs.</p>
+</li>
+<li>
+<p><strong>Automated Deployment:</strong>
+  Deploys documentation to GitHub Pages via GitHub Actions or the <code>mkdocs gh-deploy</code> command.</p>
+</li>
+<li>
+<p><strong>Pre-commit Hooks:</strong>
+  Automates quality checks before each commit.</p>
+</li>
+<li>
+<p><strong>Release Automation:</strong>
+  Manages releases automatically.</p>
+</li>
+<li>
+<p><strong>Dependency Updates Automation:</strong>
+  Keeps dependencies up-to-date via <strong>Dependabot</strong>.</p>
+</li>
+</ul>
+<h2 id="installation">Installation 📦</h2>
+<p>This setup is designed for <strong>GitHub Codespaces</strong>.
+Running locally has <strong>not been tested</strong> and may require additional configuration.</p>
+<h2 id="usage">Usage 🛠️</h2>
+<p>The following scripts are available for managing and checking Markdown files:</p>
+<h3 id="formatting">Formatting</h3>
+<ul>
+<li><strong>Run Prettier</strong> to format Markdown files:</li>
+</ul>
+<p><code>bash
+  npm run format:write</code></p>
+<h3 id="linting">Linting</h3>
+<ul>
+<li><strong>Lint Markdown</strong> files with <code>markdownlint-cli</code>:</li>
+</ul>
+<p><code>bash
+  npm run lint:markdown</code></p>
+<h3 id="link-checking">Link Checking</h3>
+<ul>
+<li><strong>Check Links</strong> in Markdown files to prevent broken URLs:</li>
+</ul>
+<p><code>bash
+  npm run links:check</code></p>
+<h3 id="spell-checking">Spell Checking</h3>
+<ul>
+<li><strong>Run Spell Check</strong> on Markdown files:</li>
+</ul>
+<p><code>bash
+  npm run spell:check</code></p>
+<h3 id="table-of-contents-generation">Table of Contents Generation</h3>
+<ul>
+<li><strong>Generate or Update TOC</strong> in Markdown files containing the <code>[[toc]]</code> placeholder:</li>
+</ul>
+<p>Add the <code>[[toc]]</code> placeholder where you want the TOC to appear in your Markdown files. For example:</p>
+<p>```markdown
+  # My Project</p>
+<p>## Table of Contents</p>
+<p>[[toc]]</p>
+<p>## Section 1</p>
+<p>Content for section 1.</p>
+<p>### Subsection 1.1</p>
+<p>Content for subsection 1.1.</p>
+<p>## Section 2</p>
+<p>Content for section 2.
+  ```</p>
+<p>Then run the following command to generate or update the TOC:</p>
+<p><code>bash
+  npm run generate:toc</code></p>
+<ul>
+<li>After running the command, the <code>[[toc]]</code> placeholder will be replaced with a dynamically generated Table of Contents:</li>
+</ul>
+<p>```markdown
+  # My Project</p>
+<p>## Table of Contents</p>
+<ul>
+<li><a href="#section-1">Section 1</a><ul>
+<li><a href="#subsection-11">Subsection 1.1</a></li>
+</ul>
+</li>
+<li><a href="#section-2">Section 2</a></li>
+</ul>
+<p>## Section 1</p>
+<p>Content for section 1.</p>
+<p>### Subsection 1.1</p>
+<p>Content for subsection 1.1.</p>
+<p>## Section 2</p>
+<p>Content for section 2.
+  ```</p>
+<h3 id="live-preview-with-mkdocs">Live Preview with MkDocs</h3>
+<ul>
+<li><strong>Preview Markdown files</strong> as a website using MkDocs:</li>
+</ul>
+<p><code>bash
+  npm run docs:serve</code></p>
+<ul>
+<li>Visit <code>http://localhost:8000</code> in your browser to see the documentation.</li>
+</ul>
+<h3 id="build-documentation-with-mkdocs">Build Documentation with MkDocs</h3>
+<ul>
+<li><strong>Build static site</strong> from Markdown files using MkDocs:</li>
+</ul>
+<p>To create a static website from your documentation, run the following command:</p>
+<p><code>bash
+  npm run docs:build</code></p>
+<p>This command will generate a <code>site</code> directory containing the built static files.
+  You can serve these files with any web server or use them for deployment.</p>
+<h3 id="deployment-to-github-pages">Deployment to GitHub Pages</h3>
+<ul>
+<li>
+<p><strong>Deploy your documentation</strong> to GitHub Pages with MkDocs:</p>
+</li>
+<li>
+<p>Ensure your repository is set up with a <code>mkdocs.yml</code> configuration file and the documentation source files.</p>
+</li>
+<li>
+<p>Deploy your documentation using one of the following methods:</p>
+<p><strong>a. Manual Deployment:</strong>
+ Run the following command to manually deploy the documentation:</p>
+<p><code>bash
+ npm run docs:deploy</code></p>
+<p>This command will:</p>
+<ul>
+<li>Build the static site.</li>
+<li>Push the <code>site</code> directory to the <code>gh-pages</code> branch of your repository.</li>
+</ul>
+<p>After deployment, your documentation will be available at:</p>
+<p><code>plaintext
+ https://&lt;username&gt;.github.io/&lt;repository-name&gt;/</code></p>
+<p><strong>b. Automated Deployment with GitHub Actions:</strong>
+ The project includes a GitHub Actions workflow (<a href=".github/workflows/deploy.yml"><code>.github/workflows/deploy.yml</code></a>)
+ that automatically deploys the documentation to GitHub Pages whenever changes are pushed to the <code>main</code> branch.</p>
+<p>After deployment, your documentation will be available at the <code>gh-pages</code> branch of your repository:</p>
+<p><code>plaintext
+ https://&lt;username&gt;.github.io/&lt;repository-name&gt;/</code></p>
+</li>
+</ul>
+<p><strong>Note:</strong> Ensure your repository settings have GitHub Pages enabled, and the source is set to the <code>gh-pages</code> branch.</p>
+<h2 id="contributing">Contributing 👥</h2>
+<p>Contributions are welcome! Please read the <a href="CONTRIBUTING.md">Contributing Guidelines</a> and check the <a href="https://github.com/Jekwwer/markdown-workspace/issues">issues</a> page.</p>
+<h2 id="license">License 🛡️</h2>
+<p>This project is licensed under the <a href="https://github.com/Jekwwer/markdown-workspace/blob/main/LICENSE">MIT License</a>.</p>
+<h2 id="contact">Contact 📬</h2>
+<p>For questions, reach out via <a href="mailto:evgenii.shiliaev@jekwwer.com">evgenii.shiliaev@jekwwer.com</a> or open an <a href="https://github.com/Jekwwer/markdown-workspace/issues">issue</a>.</p>
+<hr />
+<p>This document is based on a template by <a href="https://github.com/Jekwwer">Evgenii Shiliaev</a>,
+licensed under <a href="https://github.com/Jekwwer/markdown-docs-kit/blob/main/LICENSE">CC BY 4.0</a>. All additional content is licensed under <a href="https://github.com/Jekwwer/markdown-workspace/blob/main/LICENSE">LICENSE</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
