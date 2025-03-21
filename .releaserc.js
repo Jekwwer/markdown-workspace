@@ -11,7 +11,6 @@ module.exports = {
           { type: 'fix', release: 'patch' },
           { type: 'security', release: 'patch' },
           { type: 'deps', release: 'patch' },
-          { type: 'docs', scope: 'API', release: 'patch' },
           { type: 'docs', release: false },
           { type: 'style', release: false },
           { type: 'refactor', release: false },
