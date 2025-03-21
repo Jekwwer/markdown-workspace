@@ -35,24 +35,31 @@ This document covers:
 
 ### Project Goals
 
-This repository serves as a template for working with Markdown files and documentation
-within a ready-to-use development environment. Built on devcontainer technology and designed for GitHub Codespaces
-with VSCode, it provides a comprehensive set of tools for tasks such as formatting, linting, spellchecking,
-link validation, TOC generation, previewing, HTML building, and deployment using MkDocs.
+This repository provides a ready-to-use development environment for working with Markdown files and documentation.
+By leveraging devcontainer technology and GitHub Codespaces with VS Code, it aims to deliver a consistent, streamlined,
+and collaborative workspace for documentation projects.
 
 ### Technology Stack
 
-The project leverages npm for managing tools wherever possible.
-If an npm package is available, it is used; otherwise, custom scripts in JavaScript or Python can be implemented.
-Key tasks are handled via npm scripts.
+The environment is built using:
 
-For a complete list of these commands and further details, please refer to our [Contributing Guidelines][CONTRIBUTING].
+- **VS Code Configurations & Extensions:**
+  Pre-configured settings and essential extensions for enhanced productivity.
+- **Devcontainer Setup:**
+  Containerized development environment ensuring consistency across setups.
+- **npm for Task Management:**
+
+  - Utilizes available npm packages where possible.
+  - Falls back to custom JavaScript or Python scripts if an npm package isn’t available.
+
+  Key tasks and workflows are automated via npm scripts.
+
+For a complete list of commands and further details, please refer to our [Contributing Guidelines][CONTRIBUTING].
 
 ### Target Audience
 
-This project is primarily designed for developers who need a streamlined template for managing Markdown documentation.
-It is ideal for those working in collaborative environments where consistency and automation in documentation processes
-are essential.
+This template is designed for developers who require a streamlined,
+containerized workspace for managing Markdown documentation and related projects.
 
 ## Repository Structure
 
@@ -129,16 +136,18 @@ are essential.
 
 Key configuration files in the repository include:
 
-- `.gitignore`: Specifies files and directories to exclude from version control and Markdown linting.
-- `.editorconfig`: Defines coding styles across editors.
-- `.markdownlint.json`: Configures Markdown linting rules.
-- `.pre-commit-config.yaml`: Specifies pre-commit hooks.
-- `.prettierrc`: Contains formatting rules.
-- `.releaserc.js`: Configures the semantic release process and versioning.
-- `cspell.json`: Sets spelling rules for consistency.
+- `.devcontainer/devcontainer.json`: Development container setup, including VS Code settings,
+  environment variables, and extensions.
+- `.gitignore`: Files and directories excluded from version control.
+- `.editorconfig`: Coding style settings across different editors.
+- `.markdownlint.json`: Markdown linting rules and exclusions.
+- `.pre-commit-config.yaml`: Pre-commit hooks.
+- `.prettierrc`: Formatting rules.
+- `.releaserc.js`: Semantic release process and versioning.
+- `cspell.json`: Spelling rules for consistency.
 - `mkdocs.yml`: Configures MkDocs for building and deploying documentation.
-- `package.json`: Contains project metadata, scripts, and dependency definitions.
-- `package-lock.json`: Locks dependency versions to ensure consistent installations.
+- `package.json`: Project metadata, scripts, and dependency definitions.
+- `package-lock.json`: Locked dependency versions for consistent installations.
 
 ## Naming Conventions
 
@@ -211,26 +220,44 @@ These settings are enforced by the `.editorconfig` and `.prettierrc` configurati
 
 - **Purpose:**
   The `.editorconfig` file ensures consistent coding styles across all editors by specifying:
-  - **Indentation:** 2 spaces (no tabs)
+  - **Indentation:** 2 spaces
   - **Line Endings:** Unix-style (`lf`)
   - **Charset:** UTF-8
-  - **Max Line Length:** 88 characters for code (120 for Markdown)
+  - **Max Line Length:** 88 for code, 120 for Markdown
+    _(Note: `.editorconfig` provides these values for reference; enforcement is handled by other tools.)_
   - **Final Newline:** Enforced
   - **Trailing Whitespace:** Trimmed (with specified exceptions)
 - **Note:**
   Contributors should use an editor that supports EditorConfig to automatically apply these settings.
 
-### Linting and Formatting Tools
+### Prettier
 
-- **Prettier:**
-  Formats code based on the configuration in `.prettierrc`:
-  - Enforces semicolons, single quotes, trailing commas, and a print width of 88 characters (except 120 for Markdown).
-- **Markdownlint:**
-  Applies consistent style rules to Markdown files as configured in `.markdownlint.json`.
+- **Purpose:**
+  The `.prettierrc` file defines the project's code formatting rules for Prettier-supported files,
+  ensuring a consistent style across various file types by specifying:
+  - **Semicolons:** Enabled
+  - **Quote Style:** Single quotes preferred
+  - **Trailing Commas:** Added where possible
+  - **Tab Width:** 2 spaces (tabs are not used)
+  - **End of Line:** Unix-style (`lf`)
+  - **Print Width:** 88 characters
+    _(Note: Overrides are applied for Markdown files with a print width of 120, while JSON files have no enforced limit.)_
+- **Note:**
+  Prettier is integrated locally and runs as part of a pre-commit hook to automatically format code before commits.
+
+### Additional Linting and Formatting Tools
+
 - **Pre-commit Hooks:**
-  The `.pre-commit-config.yaml` is set up to run various checks, including formatting and linting, before commits.
-- **Yamllint:**
-  Validates YAML files during the pre-commit process to ensure they adhere to defined formatting rules.
+  The project leverages pre-commit hooks to enforce code quality through automated checks.
+  Key tools integrated via pre-commit include:
+  - **pre-commit-hooks:**
+    Ensures proper AST parsing, fixes line endings and trailing whitespace, manages mixed line endings,
+    detects private keys, validates YAML and JSON syntax, checks for merge conflicts, detects case conflicts,
+    verifies executable shebangs, fixes formatting, and sorts `requirements.txt`.
+  - **markdownlint-cli & markdown-link-check:**
+    Enforce the style guide rules for Markdown files and validate links.
+  - **yamllint:**
+    Enforces style guide rules for YAML files.
 
 ## Documentation
 
@@ -248,6 +275,12 @@ See [Comments and Documentation][COMMENTS-AND-DOCUMENTATION] from [Code Formatti
 
 - **Additional Docs:**
   Other external documentation is maintained in the `docs` directory and is deployed via MkDocs to GitHub Pages.
+
+_Note: File and directory names referenced in Markdown should always be formatted using backticks, for example:_
+
+```markdown
+Other external documentation is maintained in the `docs` directory.
+```
 
 ### Markdown References
 
@@ -314,17 +347,12 @@ See [Comments and Documentation][COMMENTS-AND-DOCUMENTATION] from [Code Formatti
   Validates hyperlinks within Markdown files.
 - **markdownlint:**
   Enforces consistent style and formatting in Markdown documents.
-- **Prettier:**
-  Formats code to ensure a uniform style across the repository.
 - **cspell:**
   A spellchecker designed for code and Markdown files.
+  It runs as a pre-commit hook and can also be executed via the npm script `npm run spell:check`.
 - **Custom TOC Generator:**
   Provided by `scripts/generate-toc.js`, this script automatically replaces `[[toc]]` placeholder with
   a table of contents for Markdown documents.
-
-#### Versioning Documentation
-
-- Documentation versioning is not implemented yet but will be managed using MkDocs in alignment with project releases.
 
 #### Consistency and Updates
 
