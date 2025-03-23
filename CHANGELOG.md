@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.8.3 - 2025-03-23
+### 🐞 Bug Fixes
+
+* **editorconfig:** correct comments in each empty filetype section ([65ea0fe](https://github.com/Jekwwer/markdown-workspace/commit/65ea0fe0c73c69af7ca7f3ef94d1c5fc89df77ad))
+
+### 📦 Dependency Updates
+
+* **pre-commit:** bump yamllint to v1.37.0 ([05dc926](https://github.com/Jekwwer/markdown-workspace/commit/05dc926465a5311ee3e52a3182fb5e3171a7a061))
+
+### 📦 Chores
+
+* **scripts:** update spell check script to include all files ([95777a2](https://github.com/Jekwwer/markdown-workspace/commit/95777a2e918e407e8816ae9a3ce81305facdca3a))
+
+### 🛠️ Refactoring
+
+* **pre-commit:** standardize and simplify hook names ([da778d2](https://github.com/Jekwwer/markdown-workspace/commit/da778d2175897cfcea59f3899b0e7193956b11bd))
+
 ## 1.8.2 - 2025-03-21
 ### 🐞 Bug Fixes
 
