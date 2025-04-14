@@ -68,13 +68,26 @@ The following scripts are available for managing and checking Markdown files:
 
 ### Formatting
 
-- **Run Prettier** to format Markdown files:
+Most formatting tasks are automated and enforced using various tools.
+Feel free to adjust these settings for your project.
+The repository configurations are described in the [`STYLEGUIDE.md`][STYLEGUIDE].
+
+- **Markdown and Prettier-supported Files:**
+  The project uses **Prettier** for code formatting.
+  **Prettier** automatically formats files in the editor when the following settings are enabled
+  (already configured in the devcontainer):
+
+  - `editor.formatOnPaste`: true
+  - `editor.formatOnSave`: true
+  - `files.autoSave`: onFocusChange
+
+  To apply formatting to your code manually, run:
 
   ```bash
   npm run format:write
   ```
 
-  For a formatting check without modifying, run:
+  For a formatting check without modifying files, run:
 
   ```bash
   npm run format:check
@@ -98,11 +111,15 @@ The following scripts are available for managing and checking Markdown files:
 
 ### Spell Checking
 
-- **Run Spell Check** on Markdown files:
+The task is automated and enforced using various tools.
 
-  ```bash
-  npm run spell:check
-  ```
+To run spell checking manually, execute:
+
+```bash
+npm run spell:check
+```
+
+Adjust the `cspell.json` configuration file if needed.
 
 ### Table of Contents Generation
 
