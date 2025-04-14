@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.8.4 - 2025-04-14
+### 📦 Dependency Updates
+
+* **actions:** bump actions/setup-python from 5.4.0 to 5.5.0 ([#17](https://github.com/Jekwwer/markdown-workspace/issues/17)) ([9c7f8d6](https://github.com/Jekwwer/markdown-workspace/commit/9c7f8d6693a74f527ec9f8ff8caeab6c42ee24ca))
+* **npm:** update cspell from 8.17.5 to 8.18.1 ([#18](https://github.com/Jekwwer/markdown-workspace/issues/18)) ([3ebd3d0](https://github.com/Jekwwer/markdown-workspace/commit/3ebd3d09a7850a5f240a44dc21ff23724dfa0dbf))
+
+### 📖 Documentation
+
+* **README.md:** update formatting and spell check instructions ([9295464](https://github.com/Jekwwer/markdown-workspace/commit/9295464ab5ba47d5d6f6b3c1b7ee38028025f05e))
+* **STYLEGUIDE.md:** clarify Prettier integration information ([cf78728](https://github.com/Jekwwer/markdown-workspace/commit/cf78728a9508168d8c04f73f34455af9e2b9af66))
+
+### 📦 Chores
+
+* **deps:** remove unnecessary overrides from package.json ([87acbe5](https://github.com/Jekwwer/markdown-workspace/commit/87acbe5f30c7b7ea868b6b9ace780526c80c7c24))
+
 ## 1.8.3 - 2025-03-23
 ### 🐞 Bug Fixes
 
