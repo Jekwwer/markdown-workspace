@@ -13,7 +13,7 @@ ci:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       # Ensure no unresolved merge conflicts remain.
       - id: check-merge-conflict
@@ -65,7 +65,7 @@ repos:
         name: 'fix:trailing-whitespace'
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.44.0
+    rev: v0.49.0
     hooks:
       # Lint Markdown files.
       - id: markdownlint
@@ -73,14 +73,14 @@ repos:
         args: ['--ignore-path', '.gitignore']
 
   - repo: https://github.com/tcort/markdown-link-check
-    rev: v3.13.7
+    rev: v3.14.2
     hooks:
       # Check for broken links in Markdown files.
       - id: markdown-link-check
         name: 'check:md-links'
 
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.37.0
+    rev: v1.38.0
     hooks:
       # Lint YAML files.
       - id: yamllint
@@ -98,7 +98,7 @@ repos:
             }
 
   - repo: https://github.com/rbubley/mirrors-prettier
-    rev: v3.5.3
+    rev: v3.9.4
     hooks:
       # Format code using Prettier.
       - id: prettier
@@ -106,7 +106,7 @@ repos:
         args: ['--write', '--config', '.prettierrc']
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.17.3
+    rev: v10.0.1
     hooks:
       # Check spelling in files.
       - id: cspell
